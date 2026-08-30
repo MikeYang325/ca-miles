@@ -30,3 +30,6 @@ body{background:var(--lf-bg)!important}
 .masthead .text-button,.shell>.topbar .ghost-btn{color:#555!important}
 .lovefly-signature,.lovefly-signature .lf-love,.lovefly-signature .lf-fly{color:var(--lf-ink)!important}.lovefly-signature .lf-club{color:#777!important}
 @media(max-width:720px){html,body{background:#fff!important}.masthead,.app-shell>.topbar,.page-shell>.hero,.shell>.topbar{background:#fff!important}}
+
+/* CA Miles mobile header fit */
+@media(max-width:720px){.app-shell>.topbar{display:grid!important;grid-template-columns:72px minmax(0,1fr) auto!important;gap:8px!important;align-items:center!important}.app-shell>.topbar .carrier-heading{display:contents!important}.app-shell>.topbar .carrier-heading>div{min-width:0!important}.carrier-logo--airchina{width:72px!important;max-width:72px!important;height:auto!important}.app-shell>.topbar h1{font-size:18px!important;white-space:nowrap!important}.app-shell>.topbar>a{font-size:12px!important;white-space:nowrap!important}.app-shell>.topbar .lovefly-signature{margin:0 0 4px!important}.sheet{padding-left:0!important;padding-right:0!important}.segment{padding:10px!important}}
