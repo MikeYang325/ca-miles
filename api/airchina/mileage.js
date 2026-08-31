@@ -86,7 +86,8 @@ module.exports = async function handler(request, response) {
       const message = validateSegment(segments[index], index);
       if (message) return response.status(400).json({ success: false, message });
     }
-    const calculated = await Promise.all(segments.map((segment, index) => queryOfficial(segment, memberGrade, index)));
+    const calculated = [];
+    for (let index = 0; index < segments.length; index += 1) calculated.push(await queryOfficial(segments[index], memberGrade, index));
     const totals = calculated.reduce((sum, item) => ({
       availableMileage: sum.availableMileage + item.availableMileage,
       gradingMileage: sum.gradingMileage + item.gradingMileage,

@@ -9,7 +9,6 @@ import ast
 import urllib.error
 import urllib.parse
 import urllib.request
-from concurrent.futures import ThreadPoolExecutor
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
@@ -197,8 +196,7 @@ class Handler(SimpleHTTPRequestHandler):
                 if message:
                     self.send_json(400, {"success": False, "message": message})
                     return
-            with ThreadPoolExecutor(max_workers=min(6, len(segments))) as executor:
-                calculated = list(executor.map(query_official, [(segment, member_grade, index) for index, segment in enumerate(segments)]))
+            calculated = [query_official((segment, member_grade, index)) for index, segment in enumerate(segments)]
             totals = {
                 "availableMileage": sum(item["availableMileage"] for item in calculated),
                 "gradingMileage": sum(item["gradingMileage"] for item in calculated),
