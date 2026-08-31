@@ -18,7 +18,7 @@ module.exports = async function handler(request, response) {
     };
     if (!/^[A-Z]{3}$/.test(payload.org) || !/^[A-Z]{3}$/.test(payload.des) || payload.org === payload.des) return response.status(400).json({ success: false, message: '机场三字码无效' });
     if (!/^\d{4}-\d{2}-\d{2}$/.test(payload.flightDate)) return response.status(400).json({ success: false, message: '日期无效' });
-    if (!/^(CA|ZH|NX|SC|KY)\d{1,4}[A-Z]?$/.test(payload.flightNo)) return response.status(400).json({ success: false, message: '航班号无效' });
+    if (!/^[A-Z]{2}\d{1,4}[A-Z]?$/.test(payload.flightNo)) return response.status(400).json({ success: false, message: '航班号无效' });
     if (!GRADES.has(payload.memberGrade)) return response.status(400).json({ success: false, message: '会员卡等无效' });
     const upstream = await fetch(OFFICIAL_URL, {
       method: 'POST',

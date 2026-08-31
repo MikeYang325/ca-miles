@@ -14,7 +14,7 @@ function cleanSegment(segment = {}) {
 function validateSegment(segment, index) {
   const prefix = `第 ${index + 1} 段`;
   if (!/^\d{4}-\d{2}-\d{2}$/.test(segment.flightDate)) return `${prefix}日期无效`;
-  if (!/^(CA|ZH|NX|SC|KY)\d{1,4}[A-Z]?$/.test(segment.flightNo)) return `${prefix}航班号无效`;
+  if (!/^[A-Z]{2}\d{1,4}[A-Z]?$/.test(segment.flightNo)) return `${prefix}航班号无效`;
   if (!/^[A-Z]{3}$/.test(segment.origin) || !/^[A-Z]{3}$/.test(segment.destination)) return `${prefix}机场三字码无效`;
   if (segment.origin === segment.destination) return `${prefix}起点与终点不能相同`;
   if (!/^[A-Z]$/.test(segment.cabin)) return `${prefix}舱位代码无效`;
@@ -66,7 +66,7 @@ async function queryOfficial(segment, memberGrade, index) {
     gradingMileage: row.gradingMileage,
     gradingSegments: row.gradingSegments,
     tiers,
-    genericRule: /^(CA|ZH|NX|SC|KY)0$/.test(segment.flightNo),
+    genericRule: /^[A-Z]{2}0$/.test(segment.flightNo),
   };
 }
 
