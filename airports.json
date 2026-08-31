@@ -1,0 +1,2676 @@
+[
+  {
+    "name": "北京首都国际机场",
+    "pinyin": "beijing",
+    "code": "PEK",
+    "initials": "bj",
+    "city": "北京首都"
+  },
+  {
+    "name": "上海浦东国际机场",
+    "pinyin": "shanghai",
+    "code": "PVG",
+    "initials": "sh",
+    "city": "上海浦东"
+  },
+  {
+    "name": "上海虹桥国际机场",
+    "pinyin": "shanghai",
+    "code": "SHA",
+    "initials": "sh",
+    "city": "上海虹桥"
+  },
+  {
+    "name": "广州白云国际机场",
+    "pinyin": "guangzhou",
+    "code": "CAN",
+    "initials": "gz",
+    "city": "广州"
+  },
+  {
+    "name": "深圳宝安国际机场",
+    "pinyin": "shenzhen",
+    "code": "SZX",
+    "initials": "sz",
+    "city": "深圳"
+  },
+  {
+    "name": "成都双流国际机场",
+    "pinyin": "chengdu",
+    "code": "CTU",
+    "initials": "cd",
+    "city": "成都双流"
+  },
+  {
+    "name": "重庆江北国际机场",
+    "pinyin": "chongqing",
+    "code": "CKG",
+    "initials": "cq",
+    "city": "重庆"
+  },
+  {
+    "name": "西安咸阳机场",
+    "pinyin": "xian",
+    "code": "XIY",
+    "initials": "xa",
+    "city": "西安"
+  },
+  {
+    "name": "大连周水子国际机场",
+    "pinyin": "dalian",
+    "code": "DLC",
+    "initials": "dl",
+    "city": "大连"
+  },
+  {
+    "name": "杭州萧山国际机场",
+    "pinyin": "hangzhou",
+    "code": "HGH",
+    "initials": "hz",
+    "city": "杭州"
+  },
+  {
+    "name": "洛杉矶国际机场",
+    "pinyin": "luoshanji",
+    "code": "LAX",
+    "initials": "lsj",
+    "city": "洛杉矶"
+  },
+  {
+    "name": "纽约肯尼迪国际机场",
+    "pinyin": "niuyue",
+    "code": "JFK",
+    "initials": "ny",
+    "city": "纽约肯尼迪"
+  },
+  {
+    "name": "纽约纽瓦克国际机场",
+    "pinyin": "niuyue",
+    "code": "EWR",
+    "initials": "ny",
+    "city": "纽约纽瓦克"
+  },
+  {
+    "name": "东京成田国际机场",
+    "pinyin": "dongjing",
+    "code": "NRT",
+    "initials": "dj",
+    "city": "东京成田"
+  },
+  {
+    "name": "新加坡樟宜机场",
+    "pinyin": "xinjiapo",
+    "code": "SIN",
+    "initials": "jjp",
+    "city": "新加坡"
+  },
+  {
+    "name": "伦敦希思罗国际机场",
+    "pinyin": "lundun",
+    "code": "LHR",
+    "initials": "ld",
+    "city": "伦敦希思罗"
+  },
+  {
+    "name": "首尔仁川国际机场",
+    "pinyin": "shouer",
+    "code": "ICN",
+    "initials": "se",
+    "city": "首尔仁川"
+  },
+  {
+    "name": "温哥华国际机场",
+    "pinyin": "wengehua",
+    "code": "YVR",
+    "initials": "wgh",
+    "city": "温哥华"
+  },
+  {
+    "name": "悉尼金斯福德史密斯机场",
+    "pinyin": "xini",
+    "code": "SYD",
+    "initials": "xn",
+    "city": "悉尼"
+  },
+  {
+    "name": "法兰克福机场",
+    "pinyin": "falankefu",
+    "code": "FRA",
+    "initials": "flkf",
+    "city": "法兰克福"
+  },
+  {
+    "name": "阿勒泰雪都机场",
+    "pinyin": "aletai",
+    "code": "AAT",
+    "initials": "alt",
+    "city": "阿勒泰"
+  },
+  {
+    "name": "兴义机场",
+    "pinyin": "xingyi",
+    "code": "ACX",
+    "initials": "xy",
+    "city": "兴义"
+  },
+  {
+    "name": "亚的斯亚贝巴博莱国际机场",
+    "pinyin": "yadisiyabeiba",
+    "code": "ADD",
+    "initials": "ydsybb",
+    "city": "亚的斯亚贝巴"
+  },
+  {
+    "name": "百色机场",
+    "pinyin": "baise",
+    "code": "AEB",
+    "initials": "bs",
+    "city": "百色"
+  },
+  {
+    "name": "阿坝红原机场",
+    "pinyin": "aba",
+    "code": "AHJ",
+    "initials": "hy",
+    "city": "红原机场"
+  },
+  {
+    "name": "安康机场",
+    "pinyin": "ankang",
+    "code": "AKA",
+    "initials": "ak",
+    "city": "安康"
+  },
+  {
+    "name": "新西兰奥克兰国际机场",
+    "pinyin": "aokelan",
+    "code": "AKL",
+    "initials": "akl",
+    "city": "奥克兰"
+  },
+  {
+    "name": "阿克苏红旗坡机场",
+    "pinyin": "akesu",
+    "code": "AKU",
+    "initials": "aks",
+    "city": "阿克苏"
+  },
+  {
+    "name": "阿里普兰机场",
+    "pinyin": "ali",
+    "code": "APJ",
+    "initials": "ali",
+    "city": "普兰机场"
+  },
+  {
+    "name": "安庆天柱山机场",
+    "pinyin": "anqing",
+    "code": "AQG",
+    "initials": "aq",
+    "city": "安庆"
+  },
+  {
+    "name": "斯德哥尔摩阿兰达国际机场",
+    "pinyin": "sidegeermo",
+    "code": "ARN",
+    "initials": "sdgem",
+    "city": "斯德哥尔摩"
+  },
+  {
+    "name": "雅典国际机场",
+    "pinyin": "yadian",
+    "code": "ATH",
+    "initials": "yd",
+    "city": "雅典"
+  },
+  {
+    "name": "阿布扎比国际机场",
+    "pinyin": "abuzhabi",
+    "code": "AUH",
+    "initials": "abzb",
+    "city": "阿布扎比"
+  },
+  {
+    "name": "安顺黄果树机场",
+    "pinyin": "anshun",
+    "code": "AVA",
+    "initials": "as",
+    "city": "安顺"
+  },
+  {
+    "name": "琼海博鳌机场",
+    "pinyin": "qionghai",
+    "code": "BAR",
+    "initials": "qh",
+    "city": "琼海"
+  },
+  {
+    "name": "包头东河机场",
+    "pinyin": "baotou",
+    "code": "BAV",
+    "initials": "bt",
+    "city": "包头"
+  },
+  {
+    "name": "巴塞罗那安普拉特机场",
+    "pinyin": "basailuonei",
+    "code": "BCN",
+    "initials": "bsln",
+    "city": "巴塞罗那"
+  },
+  {
+    "name": "贝拉机场",
+    "pinyin": "beilai",
+    "code": "BEW",
+    "initials": "bl",
+    "city": "贝拉"
+  },
+  {
+    "name": "飞雄机场",
+    "pinyin": "bijie",
+    "code": "BFJ",
+    "initials": "bj",
+    "city": "毕节"
+  },
+  {
+    "name": "伯明翰机场",
+    "pinyin": "bominghan",
+    "code": "BHX",
+    "initials": "bmh",
+    "city": "伯明翰"
+  },
+  {
+    "name": "北海福成机场",
+    "pinyin": "beihai",
+    "code": "BHY",
+    "initials": "bh",
+    "city": "北海"
+  },
+  {
+    "name": "毕尔巴鄂机场",
+    "pinyin": "bierbae",
+    "code": "BIO",
+    "initials": "bebe",
+    "city": "毕尔巴鄂"
+  },
+  {
+    "name": "曼谷素万那普国际机场",
+    "pinyin": "mangu",
+    "code": "BKK",
+    "initials": "mg",
+    "city": "曼谷素万那普"
+  },
+  {
+    "name": "班加罗尔机场",
+    "pinyin": "banjialuoer",
+    "code": "BLR",
+    "initials": "bjle",
+    "city": "班加罗尔"
+  },
+  {
+    "name": "布里斯班机场",
+    "pinyin": "bulisiban",
+    "code": "BNE",
+    "initials": "blsb",
+    "city": "布里斯班"
+  },
+  {
+    "name": "孟买国际机场",
+    "pinyin": "mengmai",
+    "code": "BOM",
+    "initials": "mm",
+    "city": "孟买"
+  },
+  {
+    "name": "波士顿洛根国际机场",
+    "pinyin": "boshidun",
+    "code": "BOS",
+    "initials": "bsd",
+    "city": "波士顿"
+  },
+  {
+    "name": "秦皇岛北戴河机场",
+    "pinyin": "Qinhuangdao",
+    "code": "BPE",
+    "initials": "SHP",
+    "city": "北戴河机场"
+  },
+  {
+    "name": "昌都邦达机场",
+    "pinyin": "changdu",
+    "code": "BPX",
+    "initials": "cd",
+    "city": "昌都"
+  },
+  {
+    "name": "巴西利亚国际机场",
+    "pinyin": "baxiliya",
+    "code": "BSB",
+    "initials": "vxly",
+    "city": "巴西利亚"
+  },
+  {
+    "name": "保山云端机场",
+    "pinyin": "baoshan",
+    "code": "BSD",
+    "initials": "bs",
+    "city": "保山"
+  },
+  {
+    "name": "巴塞尔米卢斯弗赖堡机场",
+    "pinyin": "basaier",
+    "code": "BSL",
+    "initials": "bse",
+    "city": "巴塞尔"
+  },
+  {
+    "name": "布达佩斯机场",
+    "pinyin": "budapeisi",
+    "code": "BUD",
+    "initials": "bdps",
+    "city": "布达佩斯"
+  },
+  {
+    "name": "巴尔的摩华盛顿国际机场",
+    "pinyin": "baerdemo",
+    "code": "BWI",
+    "initials": "bedm",
+    "city": "巴尔的摩"
+  },
+  {
+    "name": "亳州机场",
+    "pinyin": "Bozhou",
+    "code": "BZJ",
+    "initials": "Bozhou",
+    "city": "亳州机场"
+  },
+  {
+    "name": "巴中恩阳机场",
+    "pinyin": "bazhong",
+    "code": "BZX",
+    "initials": "bz",
+    "city": "巴中"
+  },
+  {
+    "name": "开罗国际机场",
+    "pinyin": "kailuo",
+    "code": "CAI",
+    "initials": "kl",
+    "city": "开罗"
+  },
+  {
+    "name": "巴黎戴高乐机场",
+    "pinyin": "bali",
+    "code": "CDG",
+    "initials": "bl",
+    "city": "巴黎"
+  },
+  {
+    "name": "桃花源机场",
+    "pinyin": "changde",
+    "code": "CGD",
+    "initials": "cd",
+    "city": "常德"
+  },
+  {
+    "name": "苏加诺哈达国际机场",
+    "pinyin": "yajiada",
+    "code": "CGK",
+    "initials": "yjd",
+    "city": "雅加达"
+  },
+  {
+    "name": "科隆机场",
+    "pinyin": "kelong",
+    "code": "CGN",
+    "initials": "kl",
+    "city": "科隆"
+  },
+  {
+    "name": "郑州新郑国际机场",
+    "pinyin": "zhengzhou",
+    "code": "CGO",
+    "initials": "zz",
+    "city": "郑州"
+  },
+  {
+    "name": "长春龙嘉国际机场",
+    "pinyin": "changchun",
+    "code": "CGQ",
+    "initials": "cc",
+    "city": "长春"
+  },
+  {
+    "name": "基督城国际机场",
+    "pinyin": "jiducheng",
+    "code": "CHC",
+    "initials": "jdc",
+    "city": "基督城"
+  },
+  {
+    "name": "朝阳机场",
+    "pinyin": "chaoyang",
+    "code": "CHG",
+    "initials": "cy",
+    "city": "朝阳"
+  },
+  {
+    "name": "赤峰玉龙机场",
+    "pinyin": "chifeng",
+    "code": "CIF",
+    "initials": "cf",
+    "city": "赤峰"
+  },
+  {
+    "name": "长治王村机场",
+    "pinyin": "changzhi",
+    "code": "CIH",
+    "initials": "cz",
+    "city": "长治"
+  },
+  {
+    "name": "清州国际机场",
+    "pinyin": "qingzhou",
+    "code": "CJJ",
+    "initials": "qz",
+    "city": "清州"
+  },
+  {
+    "name": "济州国际机场",
+    "pinyin": "jizhou",
+    "code": "CJU",
+    "initials": "jz",
+    "city": "济州市"
+  },
+  {
+    "name": "科纳克里机场",
+    "pinyin": "kenakeli",
+    "code": "CKY",
+    "initials": "knkl",
+    "city": "科纳克里"
+  },
+  {
+    "name": "夏洛特道格拉斯国际机场",
+    "pinyin": "xialuote",
+    "code": "CLT",
+    "initials": "slt",
+    "city": "夏洛特"
+  },
+  {
+    "name": "班达拉奈克国际机场",
+    "pinyin": "kelunpo",
+    "code": "CMB",
+    "initials": "klp",
+    "city": "科伦坡"
+  },
+  {
+    "name": "贝洛奥里藏特坦克雷多内维斯国际机场",
+    "pinyin": "beiluoaolicangte",
+    "code": "CNF",
+    "initials": "blakct",
+    "city": "贝洛奥里藏特"
+  },
+  {
+    "name": "长海大长山岛机场",
+    "pinyin": "changhai",
+    "code": "CNI",
+    "initials": "ch",
+    "city": "长海"
+  },
+  {
+    "name": "清迈国际机场",
+    "pinyin": "qingmai",
+    "code": "CNX",
+    "initials": "qm",
+    "city": "清迈"
+  },
+  {
+    "name": "库库罗瓦国际机场",
+    "pinyin": "MEIERXIN",
+    "code": "COV",
+    "initials": "MERSIN",
+    "city": "库库罗瓦"
+  },
+  {
+    "name": "哥本哈根凯斯楚普机场",
+    "pinyin": "gebenhagen",
+    "code": "CPH",
+    "initials": "gbhg",
+    "city": "哥本哈根"
+  },
+  {
+    "name": "克拉克国际机场",
+    "pinyin": "AngelesCity",
+    "code": "CRK",
+    "initials": "AngelesCity",
+    "city": "克拉克国际机场"
+  },
+  {
+    "name": "长沙黄花国际机场",
+    "pinyin": "changsha",
+    "code": "CSX",
+    "initials": "cs",
+    "city": "长沙"
+  },
+  {
+    "name": "北海道(新千岁)机场",
+    "pinyin": "qiansui",
+    "code": "CTS",
+    "initials": "qs",
+    "city": "千岁"
+  },
+  {
+    "name": "库里蒂巴阿丰索佩纳机场",
+    "pinyin": "kulidiba",
+    "code": "CWB",
+    "initials": "klbd",
+    "city": "库里蒂巴"
+  },
+  {
+    "name": "芽庄卡姆拉恩机场",
+    "pinyin": "yazhuang",
+    "code": "CXR",
+    "initials": "yz",
+    "city": "芽庄"
+  },
+  {
+    "name": "嘉义机场",
+    "pinyin": "jiayi",
+    "code": "CYI",
+    "initials": "jy",
+    "city": "嘉义"
+  },
+  {
+    "name": "常州奔牛机场",
+    "pinyin": "changzhou",
+    "code": "CZX",
+    "initials": "cz",
+    "city": "常州"
+  },
+  {
+    "name": "岘港国际机场",
+    "pinyin": "xiangang",
+    "code": "DAD",
+    "initials": "xg",
+    "city": "岘港"
+  },
+  {
+    "name": "大同云冈机场",
+    "pinyin": "datong",
+    "code": "DAT",
+    "initials": "dt",
+    "city": "大同"
+  },
+  {
+    "name": "达州河市机场",
+    "pinyin": "dazhou",
+    "code": "DAX",
+    "initials": "dz",
+    "city": "达州河市"
+  },
+  {
+    "name": "稻城亚丁机场",
+    "pinyin": "daochengyading",
+    "code": "DCY",
+    "initials": "dc",
+    "city": "稻城"
+  },
+  {
+    "name": "丹东浪头机场",
+    "pinyin": "dandong",
+    "code": "DDG",
+    "initials": "dd",
+    "city": "丹东"
+  },
+  {
+    "name": "英迪拉·甘地国际机场",
+    "pinyin": "deli",
+    "code": "DEL",
+    "initials": "dl",
+    "city": "德里"
+  },
+  {
+    "name": "丹佛国际机场",
+    "pinyin": "danfo",
+    "code": "DEN",
+    "initials": "df",
+    "city": "丹佛"
+  },
+  {
+    "name": "达拉斯沃思堡国际机场",
+    "pinyin": "dalasi",
+    "code": "DFW",
+    "initials": "dls",
+    "city": "达拉斯"
+  },
+  {
+    "name": "迪庆香格里拉机场",
+    "pinyin": "diqing",
+    "code": "DIG",
+    "initials": "dq",
+    "city": "迪庆"
+  },
+  {
+    "name": "利奥波德塞达尔桑戈尔机场",
+    "pinyin": "dakaer",
+    "code": "DKR",
+    "initials": "dke",
+    "city": "达喀尔"
+  },
+  {
+    "name": "大理荒草坝机场",
+    "pinyin": "dali",
+    "code": "DLU",
+    "initials": "dl",
+    "city": "大理"
+  },
+  {
+    "name": "曼谷廊曼国际机场",
+    "pinyin": "mangu",
+    "code": "DMK",
+    "initials": "mg",
+    "city": "曼谷廊曼"
+  },
+  {
+    "name": "敦煌莫高国际机场",
+    "pinyin": "dunhuang",
+    "code": "DNH",
+    "initials": "dh",
+    "city": "敦煌机场"
+  },
+  {
+    "name": "东营胜利机场",
+    "pinyin": "dongying",
+    "code": "DOY",
+    "initials": "dy",
+    "city": "东营"
+  },
+  {
+    "name": "努拉莱伊机场",
+    "pinyin": "balidao",
+    "code": "DPS",
+    "initials": "bld",
+    "city": "巴厘岛"
+  },
+  {
+    "name": "大庆萨尔图机场",
+    "pinyin": "daqing",
+    "code": "DQA",
+    "initials": "dq",
+    "city": "大庆"
+  },
+  {
+    "name": "鄂尔多斯伊金霍洛机场",
+    "pinyin": "eerduosi",
+    "code": "DSN",
+    "initials": "eeds",
+    "city": "鄂尔多斯"
+  },
+  {
+    "name": "底特律都会韦恩县机场",
+    "pinyin": "ditelv",
+    "code": "DTW",
+    "initials": "dtl",
+    "city": "底特律"
+  },
+  {
+    "name": "杜塞尔多夫国际机场",
+    "pinyin": "dusaierduofu",
+    "code": "DUS",
+    "initials": "dsed",
+    "city": "杜塞尔多夫"
+  },
+  {
+    "name": "迪拜国际机场",
+    "pinyin": "dibai",
+    "code": "DXB",
+    "initials": "gd",
+    "city": "迪拜"
+  },
+  {
+    "name": "张家界荷花机场",
+    "pinyin": "zhangjiajie",
+    "code": "DYG",
+    "initials": "zjj",
+    "city": "张家界"
+  },
+  {
+    "name": "达州金垭机场",
+    "pinyin": "DAZHOU",
+    "code": "DZH",
+    "initials": "DZ",
+    "city": "达州金垭"
+  },
+  {
+    "name": "恩施许家坪机场",
+    "pinyin": "enshi",
+    "code": "ENH",
+    "initials": "es",
+    "city": "恩施"
+  },
+  {
+    "name": "延安南泥湾机场",
+    "pinyin": "yanan",
+    "code": "ENY",
+    "initials": "ya",
+    "city": "延安"
+  },
+  {
+    "name": "二连浩特赛乌苏国际机场",
+    "pinyin": "erlianhaote",
+    "code": "ERL",
+    "initials": "elht",
+    "city": "二连浩特"
+  },
+  {
+    "name": "罗马菲乌米奇诺机场",
+    "pinyin": "luoma",
+    "code": "FCO",
+    "initials": "lm",
+    "city": "罗马"
+  },
+  {
+    "name": "弗洛里亚诺波利斯埃西里奥卢斯机场",
+    "pinyin": "fuluoliyaluobolisi",
+    "code": "FLN",
+    "initials": "fllynbls",
+    "city": "弗洛里亚诺波利斯"
+  },
+  {
+    "name": "平壤顺安国际机场",
+    "pinyin": "pingrang",
+    "code": "FNJ",
+    "initials": "pr",
+    "city": "平壤"
+  },
+  {
+    "name": "福州长乐国际机场",
+    "pinyin": "fuzhou",
+    "code": "FOC",
+    "initials": "fz",
+    "city": "福州"
+  },
+  {
+    "name": "阜阳西关机场",
+    "pinyin": "fuyang",
+    "code": "FUG",
+    "initials": "fy",
+    "city": "阜阳"
+  },
+  {
+    "name": "福冈机场",
+    "pinyin": "fugang",
+    "code": "FUK",
+    "initials": "fg",
+    "city": "福冈"
+  },
+  {
+    "name": "佛山沙堤机场",
+    "pinyin": "foshan",
+    "code": "FUO",
+    "initials": "fs",
+    "city": "佛山"
+  },
+  {
+    "name": "抚远东极机场",
+    "pinyin": "fuyuan",
+    "code": "FYJ",
+    "initials": "fy",
+    "city": "抚远"
+  },
+  {
+    "name": "富蕴机场",
+    "pinyin": "fuyun",
+    "code": "FYN",
+    "initials": "fy",
+    "city": "富蕴"
+  },
+  {
+    "name": "广汉机场",
+    "pinyin": "guanghan",
+    "code": "GHN",
+    "initials": "gh",
+    "city": "广汉"
+  },
+  {
+    "name": "里约热内卢国际机场",
+    "pinyin": "Liyurrineilu",
+    "code": "GIG",
+    "initials": "lyrnl",
+    "city": "里约热内卢"
+  },
+  {
+    "name": "首尔金浦国际机场",
+    "pinyin": "shouer",
+    "code": "GMP",
+    "initials": "se",
+    "city": "首尔金浦"
+  },
+  {
+    "name": "格尔木机场",
+    "pinyin": "geermu",
+    "code": "GOQ",
+    "initials": "gem",
+    "city": "格尔木"
+  },
+  {
+    "name": "哥德堡兰德维机场",
+    "pinyin": "gedebao",
+    "code": "GOT",
+    "initials": "gdb",
+    "city": "哥德堡"
+  },
+  {
+    "name": "圣保罗国际机场",
+    "pinyin": "shengbaoluo",
+    "code": "GRU",
+    "initials": "sbl",
+    "city": "圣保罗"
+  },
+  {
+    "name": "日内瓦机场",
+    "pinyin": "rineiwa",
+    "code": "GVA",
+    "initials": "rnw",
+    "city": "日内瓦"
+  },
+  {
+    "name": "广元盘龙机场",
+    "pinyin": "guangyuan",
+    "code": "GYS",
+    "initials": "gy",
+    "city": "广元"
+  },
+  {
+    "name": "固原六盘山机场",
+    "pinyin": "guyuan",
+    "code": "GYU",
+    "initials": "gy",
+    "city": "固原"
+  },
+  {
+    "name": "汉诺威机场",
+    "pinyin": "hannuowei",
+    "code": "HAJ",
+    "initials": "hnw",
+    "city": "汉诺威"
+  },
+  {
+    "name": "海口美兰国际机场",
+    "pinyin": "haikou",
+    "code": "HAK",
+    "initials": "hk",
+    "city": "海口"
+  },
+  {
+    "name": "汉堡国际机场",
+    "pinyin": "hanbao",
+    "code": "HAM",
+    "initials": "hb",
+    "city": "汉堡"
+  },
+  {
+    "name": "河内内拜国际机场",
+    "pinyin": "henei",
+    "code": "HAN",
+    "initials": "hn",
+    "city": "河内"
+  },
+  {
+    "name": "哈瓦那何塞马蒂国际机场",
+    "pinyin": "hawana",
+    "code": "HAV",
+    "initials": "hwn",
+    "city": "哈瓦那"
+  },
+  {
+    "name": "金城江机场",
+    "pinyin": "hechi",
+    "code": "HCJ",
+    "initials": "hc",
+    "city": "河池"
+  },
+  {
+    "name": "邯郸机场",
+    "pinyin": "handan",
+    "code": "HDG",
+    "initials": "hd",
+    "city": "邯郸"
+  },
+  {
+    "name": "黑河机场",
+    "pinyin": "heihe",
+    "code": "HEK",
+    "initials": "hh",
+    "city": "黑河"
+  },
+  {
+    "name": "赫尔辛基万塔国际机场",
+    "pinyin": "heerxinji",
+    "code": "HEL",
+    "initials": "hexj",
+    "city": "赫尔辛基"
+  },
+  {
+    "name": "呼和浩特白塔国际机场",
+    "pinyin": "huhehaote",
+    "code": "HET",
+    "initials": "hhht",
+    "city": "呼和浩特"
+  },
+  {
+    "name": "合肥新桥国际机场",
+    "pinyin": "hefei",
+    "code": "HFE",
+    "initials": "hf",
+    "city": "合肥"
+  },
+  {
+    "name": "淮安涟水机场",
+    "pinyin": "huaian",
+    "code": "HIA",
+    "initials": "ha",
+    "city": "淮安"
+  },
+  {
+    "name": "广岛机场",
+    "pinyin": "guangdao",
+    "code": "HIJ",
+    "initials": "gdb",
+    "city": "广岛"
+  },
+  {
+    "name": "怀化芷江机场",
+    "pinyin": "huaihua",
+    "code": "HJJ",
+    "initials": "hh",
+    "city": "怀化"
+  },
+  {
+    "name": "函馆机场",
+    "pinyin": "hanguan",
+    "code": "HKD",
+    "initials": "hg",
+    "city": "函馆"
+  },
+  {
+    "name": "香港赤鱲角国际机场",
+    "pinyin": "zhongguoxianggang",
+    "code": "HKG",
+    "initials": "zgxg",
+    "city": "中国香港"
+  },
+  {
+    "name": "普吉国际机场",
+    "pinyin": "puji",
+    "code": "HKT",
+    "initials": "pjd",
+    "city": "普吉岛"
+  },
+  {
+    "name": "海拉尔东山机场",
+    "pinyin": "hailaer",
+    "code": "HLD",
+    "initials": "lhe",
+    "city": "海拉尔"
+  },
+  {
+    "name": "乌兰浩特机场",
+    "pinyin": "wulanhaote",
+    "code": "HLH",
+    "initials": "wlht",
+    "city": "乌兰浩特"
+  },
+  {
+    "name": "哈密机场",
+    "pinyin": "Hami",
+    "code": "HMI",
+    "initials": "hm",
+    "city": "哈密"
+  },
+  {
+    "name": "东京羽田国际机场",
+    "pinyin": "dongjing",
+    "code": "HND",
+    "initials": "dj",
+    "city": "东京羽田"
+  },
+  {
+    "name": "火奴鲁鲁（檀香山）国际机场",
+    "pinyin": "tanxiangshan",
+    "code": "HNL",
+    "initials": "txs",
+    "city": "檀香山"
+  },
+  {
+    "name": "衡阳南岳机场",
+    "pinyin": "hengyang",
+    "code": "HNY",
+    "initials": "hy",
+    "city": "衡阳"
+  },
+  {
+    "name": "哈尔滨太平国际机场",
+    "pinyin": "haerbin",
+    "code": "HRB",
+    "initials": "heb",
+    "city": "哈尔滨"
+  },
+  {
+    "name": "绥芬河东宁机场",
+    "pinyin": "suifenhe",
+    "code": "HSF",
+    "initials": "SFH",
+    "city": "绥芬河机场"
+  },
+  {
+    "name": "舟山普陀山机场",
+    "pinyin": "zhoushan",
+    "code": "HSN",
+    "initials": "zs",
+    "city": "舟山"
+  },
+  {
+    "name": "卡达拉机场",
+    "pinyin": "chita",
+    "code": "HTA",
+    "initials": "ct",
+    "city": "赤塔"
+  },
+  {
+    "name": "和田机场",
+    "pinyin": "hetian",
+    "code": "HTN",
+    "initials": "ht",
+    "city": "和田"
+  },
+  {
+    "name": "惠州平潭机场",
+    "pinyin": "huizhou",
+    "code": "HUZ",
+    "initials": "hz",
+    "city": "惠州"
+  },
+  {
+    "name": "台州路桥机场",
+    "pinyin": "taizhou",
+    "code": "HYN",
+    "initials": "tz",
+    "city": "台州"
+  },
+  {
+    "name": "汉中城固机场",
+    "pinyin": "hanzhong",
+    "code": "HZG",
+    "initials": "hz",
+    "city": "汉中"
+  },
+  {
+    "name": "黎平机场",
+    "pinyin": "liping",
+    "code": "HZH",
+    "initials": "lp",
+    "city": "黎平"
+  },
+  {
+    "name": "华盛顿杜勒斯国际机场",
+    "pinyin": "huashengdun",
+    "code": "IAD",
+    "initials": "hsd",
+    "city": "华盛顿"
+  },
+  {
+    "name": "休斯顿乔治布什洲际机场",
+    "pinyin": "xiusidun",
+    "code": "IAH",
+    "initials": "xsd",
+    "city": "休斯顿"
+  },
+  {
+    "name": "茨城机场",
+    "pinyin": "cicheng",
+    "code": "IBR",
+    "initials": "cc",
+    "city": "茨城"
+  },
+  {
+    "name": "卡塔拉塔斯机场",
+    "pinyin": "fusididuyiguasu",
+    "code": "IGU",
+    "initials": "fsddygs",
+    "city": "福斯的杜伊瓜苏"
+  },
+  {
+    "name": "银川河东机场",
+    "pinyin": "yinchuan",
+    "code": "INC",
+    "initials": "yz",
+    "city": "银川"
+  },
+  {
+    "name": "且末机场",
+    "pinyin": "qiemo",
+    "code": "IQM",
+    "initials": "qm",
+    "city": "且末"
+  },
+  {
+    "name": "庆阳机场",
+    "pinyin": "qingyang",
+    "code": "IQN",
+    "initials": "qy",
+    "city": "庆阳"
+  },
+  {
+    "name": "伊斯兰堡机场",
+    "pinyin": "yisilanbao",
+    "code": "ISB",
+    "initials": "yslb",
+    "city": "伊斯兰堡"
+  },
+  {
+    "name": "伊斯坦布尔阿塔图尔克国际机场",
+    "pinyin": "yisitanbuer",
+    "code": "IST",
+    "initials": "ystbe",
+    "city": "伊斯坦布尔"
+  },
+  {
+    "name": "大阪伊丹国际机场",
+    "pinyin": "daban",
+    "code": "ITM",
+    "initials": "db",
+    "city": "大阪伊丹"
+  },
+  {
+    "name": "景德镇罗家机场",
+    "pinyin": "jingdezhen",
+    "code": "JDZ",
+    "initials": "jdz",
+    "city": "景德镇"
+  },
+  {
+    "name": "嘉峪关机场",
+    "pinyin": "jiayuguan",
+    "code": "JGN",
+    "initials": "jyg",
+    "city": "嘉峪关"
+  },
+  {
+    "name": "井冈山机场",
+    "pinyin": "jinggangshan",
+    "code": "JGS",
+    "initials": "jgs",
+    "city": "井冈山"
+  },
+  {
+    "name": "西双版纳景洪机场",
+    "pinyin": "xishuangbanna",
+    "code": "JHG",
+    "initials": "xsbn",
+    "city": "西双版纳"
+  },
+  {
+    "name": "吉林二台子机场",
+    "pinyin": "jilin",
+    "code": "JIL",
+    "initials": "jl",
+    "city": "吉林"
+  },
+  {
+    "name": "武陵山机场",
+    "pinyin": "QIANJIANG",
+    "code": "JIQ",
+    "initials": "qj",
+    "city": "黔江"
+  },
+  {
+    "name": "九江庐山机场",
+    "pinyin": "jiujiang",
+    "code": "JIU",
+    "initials": "jj",
+    "city": "九江"
+  },
+  {
+    "name": "泉州晋江国际",
+    "pinyin": "quanzhou",
+    "code": "JJN",
+    "initials": "qz",
+    "city": "泉州"
+  },
+  {
+    "name": "佳木斯东郊机场",
+    "pinyin": "jiamusi",
+    "code": "JMU",
+    "initials": "jms",
+    "city": "佳木斯"
+  },
+  {
+    "name": "约翰内斯堡国际机场",
+    "pinyin": "yuehanneisibao",
+    "code": "JNB",
+    "initials": "yhnsb",
+    "city": "约翰内斯堡"
+  },
+  {
+    "name": "济宁曲阜机场",
+    "pinyin": "jining",
+    "code": "JNG",
+    "initials": "jn",
+    "city": "济宁"
+  },
+  {
+    "name": "嘉兴南湖机场",
+    "pinyin": "Jiaxing",
+    "code": "JNH",
+    "initials": "Jiaxing",
+    "city": "嘉兴机场"
+  },
+  {
+    "name": "锦州湾国际机场",
+    "pinyin": "jinzhou",
+    "code": "JNZ",
+    "initials": "jz",
+    "city": "锦州"
+  },
+  {
+    "name": "赣州瑞金机场",
+    "pinyin": "Ganzhou",
+    "code": "JRJ",
+    "initials": "Ganzhou",
+    "city": "瑞金机场"
+  },
+  {
+    "name": "建三江湿地机场",
+    "pinyin": "jiansanjiang",
+    "code": "JSJ",
+    "initials": "jsj",
+    "city": "建三江"
+  },
+  {
+    "name": "池州九华山机场",
+    "pinyin": "Chizhou",
+    "code": "JUH",
+    "initials": "cz",
+    "city": "池州"
+  },
+  {
+    "name": "衢州机场",
+    "pinyin": "quzhou",
+    "code": "JUZ",
+    "initials": "qz",
+    "city": "衢州"
+  },
+  {
+    "name": "鸡西兴凯湖机场",
+    "pinyin": "jixi",
+    "code": "JXA",
+    "initials": "jx",
+    "city": "鸡西"
+  },
+  {
+    "name": "九寨沟黄龙机场",
+    "pinyin": "jiuzhaigou",
+    "code": "JZH",
+    "initials": "jzg",
+    "city": "九寨沟"
+  },
+  {
+    "name": "基辅波里斯珀尔国际机场",
+    "pinyin": "jifu",
+    "code": "KBP",
+    "initials": "jf",
+    "city": "基辅"
+  },
+  {
+    "name": "库车机场",
+    "pinyin": "kuche",
+    "code": "KCA",
+    "initials": "kc",
+    "city": "库车"
+  },
+  {
+    "name": "康定机场",
+    "pinyin": "kangding",
+    "code": "KGT",
+    "initials": "kd",
+    "city": "康定"
+  },
+  {
+    "name": "喀什机场",
+    "pinyin": "kashi",
+    "code": "KHG",
+    "initials": "ks",
+    "city": "喀什"
+  },
+  {
+    "name": "高雄国际机场",
+    "pinyin": "gaoxiong",
+    "code": "KHH",
+    "initials": "gx",
+    "city": "高雄"
+  },
+  {
+    "name": "卡拉奇机场",
+    "pinyin": "kalaqi",
+    "code": "KHI",
+    "initials": "klq",
+    "city": "卡拉奇"
+  },
+  {
+    "name": "南昌昌北国际机场",
+    "pinyin": "nanchang",
+    "code": "KHN",
+    "initials": "nc",
+    "city": "南昌"
+  },
+  {
+    "name": "新泻机场",
+    "pinyin": "xinxie",
+    "code": "KIJ",
+    "initials": "xx",
+    "city": "新泻"
+  },
+  {
+    "name": "大阪关西国际机场",
+    "pinyin": "daban",
+    "code": "KIX",
+    "initials": "db",
+    "city": "大阪关西"
+  },
+  {
+    "name": "布尔津喀纳斯机场",
+    "pinyin": "buerjin",
+    "code": "KJI",
+    "initials": "bej",
+    "city": "布尔津"
+  },
+  {
+    "name": "昆明长水国际机场",
+    "pinyin": "kunming",
+    "code": "KMG",
+    "initials": "km",
+    "city": "昆明"
+  },
+  {
+    "name": "吉安机场",
+    "pinyin": "jian",
+    "code": "KNC",
+    "initials": "ja",
+    "city": "吉安"
+  },
+  {
+    "name": "赣州黄金机场",
+    "pinyin": "ganzhou",
+    "code": "KOW",
+    "initials": "gz",
+    "city": "赣州"
+  },
+  {
+    "name": "库尔勒梨城机场",
+    "pinyin": "kuerle",
+    "code": "KRL",
+    "initials": "kel",
+    "city": "库尔勒"
+  },
+  {
+    "name": "克拉玛依机场",
+    "pinyin": "kelamayi",
+    "code": "KRY",
+    "initials": "klmy",
+    "city": "克拉玛依"
+  },
+  {
+    "name": "柬埔寨德崇国际机场",
+    "pinyin": "Jinbian",
+    "code": "KTI",
+    "initials": "Jinbian",
+    "city": "德崇机场"
+  },
+  {
+    "name": "加德满都特里布胡凡国际机场",
+    "pinyin": "jiademandu",
+    "code": "KTM",
+    "initials": "jdmd",
+    "city": "加德满都"
+  },
+  {
+    "name": "吉隆坡国际机场",
+    "pinyin": "jilongpo",
+    "code": "KUL",
+    "initials": "jlp",
+    "city": "吉隆坡"
+  },
+  {
+    "name": "贵阳龙洞堡国际机场",
+    "pinyin": "guiyang",
+    "code": "KWE",
+    "initials": "gy",
+    "city": "贵阳"
+  },
+  {
+    "name": "桂林两江国际机场",
+    "pinyin": "guilin",
+    "code": "KWL",
+    "initials": "gl",
+    "city": "桂林"
+  },
+  {
+    "name": "拉斯维加斯麦卡伦国际机场",
+    "pinyin": "lasiweijiasi",
+    "code": "LAS",
+    "initials": "lswjs",
+    "city": "拉斯维加斯"
+  },
+  {
+    "name": "龙岩冠豸山机场",
+    "pinyin": "longyan",
+    "code": "LCX",
+    "initials": "ly",
+    "city": "龙岩"
+  },
+  {
+    "name": "莱比锡机场",
+    "pinyin": "laibixi",
+    "code": "LEJ",
+    "initials": "sbx",
+    "city": "莱比锡"
+  },
+  {
+    "name": "临汾乔李机场",
+    "pinyin": "linfen",
+    "code": "LFQ",
+    "initials": "lf",
+    "city": "临汾"
+  },
+  {
+    "name": "伦敦盖特威克国际机场",
+    "pinyin": "lundun",
+    "code": "LGW",
+    "initials": "ld",
+    "city": "伦敦盖特威克"
+  },
+  {
+    "name": "兰州中川国际机场",
+    "pinyin": "lanzhou",
+    "code": "LHW",
+    "initials": "lz",
+    "city": "兰州"
+  },
+  {
+    "name": "丽水机场",
+    "pinyin": "Lishui",
+    "code": "LIJ",
+    "initials": "Lishui",
+    "city": "丽水机场"
+  },
+  {
+    "name": "里斯本机场",
+    "pinyin": "lisiben",
+    "code": "LIS",
+    "initials": "lsb",
+    "city": "里斯本"
+  },
+  {
+    "name": "丽江三义机场",
+    "pinyin": "lijiang",
+    "code": "LJG",
+    "initials": "lj",
+    "city": "丽江"
+  },
+  {
+    "name": "吕勒奥卡拉克斯机场",
+    "pinyin": "luleao",
+    "code": "LLA",
+    "initials": "lla",
+    "city": "吕勒奥"
+  },
+  {
+    "name": "荔波机场",
+    "pinyin": "libo",
+    "code": "LLB",
+    "initials": "lb",
+    "city": "荔波"
+  },
+  {
+    "name": "永州零陵机场",
+    "pinyin": "yongzhou",
+    "code": "LLF",
+    "initials": "yz",
+    "city": "永州"
+  },
+  {
+    "name": "临沧机场",
+    "pinyin": "lincang",
+    "code": "LNJ",
+    "initials": "lc",
+    "city": "临沧"
+  },
+  {
+    "name": "莫尔塔拉穆哈迈德国际机场",
+    "pinyin": "lagesi",
+    "code": "LOS",
+    "initials": "lgs",
+    "city": "拉各斯"
+  },
+  {
+    "name": "六盘水月照机场",
+    "pinyin": "liupanshui",
+    "code": "LPF",
+    "initials": "lps",
+    "city": "六盘水"
+  },
+  {
+    "name": "德宏芒市机场",
+    "pinyin": "mangshi",
+    "code": "LUM",
+    "initials": "ms",
+    "city": "芒市"
+  },
+  {
+    "name": "拉萨贡嘎机场",
+    "pinyin": "lasa",
+    "code": "LXA",
+    "initials": "ls",
+    "city": "拉萨"
+  },
+  {
+    "name": "洛阳北郊机场",
+    "pinyin": "luoyang",
+    "code": "LYA",
+    "initials": "ly",
+    "city": "洛阳"
+  },
+  {
+    "name": "连云港花果山机场",
+    "pinyin": "lianyungang",
+    "code": "LYG",
+    "initials": "lyg",
+    "city": "连云港"
+  },
+  {
+    "name": "临沂沭埠岭机场",
+    "pinyin": "linyi",
+    "code": "LYI",
+    "initials": "ly",
+    "city": "临沂"
+  },
+  {
+    "name": "柳州白莲机场",
+    "pinyin": "liuzhou",
+    "code": "LZH",
+    "initials": "lz",
+    "city": "柳州"
+  },
+  {
+    "name": "泸州云龙机场",
+    "pinyin": "luzhou",
+    "code": "LZO",
+    "initials": "lz",
+    "city": "泸州"
+  },
+  {
+    "name": "西藏林芝米林机场",
+    "pinyin": "linzhi",
+    "code": "LZY",
+    "initials": "lz",
+    "city": "林芝"
+  },
+  {
+    "name": "马德里机场",
+    "pinyin": "madeli",
+    "code": "MAD",
+    "initials": "mdl",
+    "city": "马德里"
+  },
+  {
+    "name": "马瑙斯爱德华多戈麦斯机场",
+    "pinyin": "malusi",
+    "code": "MAO",
+    "initials": "mls",
+    "city": "马瑙斯"
+  },
+  {
+    "name": "奥兰多国际机场",
+    "pinyin": "aolanduo",
+    "code": "MCO",
+    "initials": "ald",
+    "city": "奥兰多"
+  },
+  {
+    "name": "牡丹江海浪机场",
+    "pinyin": "mudanjiang",
+    "code": "MDG",
+    "initials": "mdj",
+    "city": "牡丹江"
+  },
+  {
+    "name": "墨尔本机场",
+    "pinyin": "moerben",
+    "code": "MEL",
+    "initials": "meb",
+    "city": "墨尔本"
+  },
+  {
+    "name": "胡阿雷兹国际机场",
+    "pinyin": "moxigecheng",
+    "code": "MEX",
+    "initials": "mxgc",
+    "city": "墨西哥城"
+  },
+  {
+    "name": "澳门国际机场",
+    "pinyin": "zhongguoaomen",
+    "code": "MFM",
+    "initials": "zgxg",
+    "city": "中国澳门"
+  },
+  {
+    "name": "绵阳南郊机场",
+    "pinyin": "mianyang",
+    "code": "MIG",
+    "initials": "my",
+    "city": "绵阳"
+  },
+  {
+    "name": "马尼拉国际机场",
+    "pinyin": "manila",
+    "code": "MNL",
+    "initials": "mnl",
+    "city": "马尼拉"
+  },
+  {
+    "name": "明尼阿波利斯圣保罗国际机场",
+    "pinyin": "mingniabolisi",
+    "code": "MSP",
+    "initials": "mnabls",
+    "city": "明尼阿波利斯"
+  },
+  {
+    "name": "明斯克国际机场",
+    "pinyin": "Mingsike",
+    "code": "MSQ",
+    "initials": "msk",
+    "city": "明斯克"
+  },
+  {
+    "name": "慕尼黑机场",
+    "pinyin": "munihei",
+    "code": "MUC",
+    "initials": "mnh",
+    "city": "慕尼黑"
+  },
+  {
+    "name": "务安国际机场",
+    "pinyin": "wuan",
+    "code": "MWX",
+    "initials": "wa",
+    "city": "务安"
+  },
+  {
+    "name": "米兰马尔彭萨国际机场",
+    "pinyin": "milan",
+    "code": "MXP",
+    "initials": "ml",
+    "city": "米兰"
+  },
+  {
+    "name": "梅县机场",
+    "pinyin": "meixian",
+    "code": "MXZ",
+    "initials": "mx",
+    "city": "梅县"
+  },
+  {
+    "name": "南充高坪机场",
+    "pinyin": "nanchong",
+    "code": "NAO",
+    "initials": "nc",
+    "city": "南充"
+  },
+  {
+    "name": "长白山机场",
+    "pinyin": "baishan",
+    "code": "NBS",
+    "initials": "BS",
+    "city": "白山"
+  },
+  {
+    "name": "克特阿祖尔机场",
+    "pinyin": "nisi",
+    "code": "NCE",
+    "initials": "ns",
+    "city": "尼斯"
+  },
+  {
+    "name": "齐齐哈尔三家子机场",
+    "pinyin": "qiqihaer",
+    "code": "NDG",
+    "initials": "qqhe",
+    "city": "齐齐哈尔"
+  },
+  {
+    "name": "宁波栎社国际机场",
+    "pinyin": "ningbo",
+    "code": "NGB",
+    "initials": "nb",
+    "city": "宁波"
+  },
+  {
+    "name": "名古屋中部国际机场",
+    "pinyin": "mingguwu",
+    "code": "NGO",
+    "initials": "mgw",
+    "city": "名古屋"
+  },
+  {
+    "name": "狮泉河阿里昆莎机场",
+    "pinyin": "shiquanhe",
+    "code": "NGQ",
+    "initials": "sqh",
+    "city": "狮泉河"
+  },
+  {
+    "name": "长崎机场",
+    "pinyin": "changqi",
+    "code": "NGS",
+    "initials": "cq",
+    "city": "长崎"
+  },
+  {
+    "name": "南京禄口国际机场",
+    "pinyin": "nanjing",
+    "code": "NKG",
+    "initials": "nj",
+    "city": "南京"
+  },
+  {
+    "name": "那拉提机场",
+    "pinyin": "xinyuan",
+    "code": "NLT",
+    "initials": "xy",
+    "city": "新源"
+  },
+  {
+    "name": "南宁吴圩国际机场",
+    "pinyin": "nanning",
+    "code": "NNG",
+    "initials": "nn",
+    "city": "南宁"
+  },
+  {
+    "name": "南阳姜营机场",
+    "pinyin": "nanyang",
+    "code": "NNY",
+    "initials": "ny",
+    "city": "南阳"
+  },
+  {
+    "name": "努尔苏丹纳扎尔巴耶夫国际机场",
+    "pinyin": "asitana",
+    "code": "NQZ",
+    "initials": "astn",
+    "city": "努尔苏丹"
+  },
+  {
+    "name": "南通兴东国际机场",
+    "pinyin": "nantong",
+    "code": "NTG",
+    "initials": "nt",
+    "city": "南通"
+  },
+  {
+    "name": "纽伦堡机场",
+    "pinyin": "niulunbao",
+    "code": "NUE",
+    "initials": "nlb",
+    "city": "纽伦堡"
+  },
+  {
+    "name": "满洲里西郊机场",
+    "pinyin": "manzhouli",
+    "code": "NZH",
+    "initials": "mzl",
+    "city": "满洲里"
+  },
+  {
+    "name": "漠河机场",
+    "pinyin": "mohe",
+    "code": "OHE",
+    "initials": "mh",
+    "city": "漠河"
+  },
+  {
+    "name": "冲绳那霸机场",
+    "pinyin": "chongsheng",
+    "code": "OKA",
+    "initials": "cs",
+    "city": "冲绳"
+  },
+  {
+    "name": "波尔图奥波多机场",
+    "pinyin": "boertu",
+    "code": "OPO",
+    "initials": "bet",
+    "city": "波尔图"
+  },
+  {
+    "name": "芝加哥奥黑尔国际机场",
+    "pinyin": "zhijiage",
+    "code": "ORD",
+    "initials": "zjg",
+    "city": "芝加哥"
+  },
+  {
+    "name": "奥斯陆加勒穆恩机场",
+    "pinyin": "aosilu",
+    "code": "OSL",
+    "initials": "asl",
+    "city": "奥斯陆"
+  },
+  {
+    "name": "波特兰国际机场",
+    "pinyin": "botelan",
+    "code": "PDX",
+    "initials": "btl",
+    "city": "波特兰"
+  },
+  {
+    "name": "珀斯机场",
+    "pinyin": "bosi",
+    "code": "PER",
+    "initials": "bs",
+    "city": "珀斯"
+  },
+  {
+    "name": "费城国际机场",
+    "pinyin": "feicheng",
+    "code": "PHL",
+    "initials": "fc",
+    "city": "费城"
+  },
+  {
+    "name": "菲尼克斯空港国际机场",
+    "pinyin": "fenghuangcheng",
+    "code": "PHX",
+    "initials": "fhc",
+    "city": "凤凰城"
+  },
+  {
+    "name": "匹兹堡国际机场",
+    "pinyin": "pizibao",
+    "code": "PIT",
+    "initials": "pzb",
+    "city": "匹兹堡"
+  },
+  {
+    "name": "北京大兴国际机场",
+    "pinyin": "beijing",
+    "code": "PKX",
+    "initials": "bj",
+    "city": "北京大兴"
+  },
+  {
+    "name": "金边国际机场",
+    "pinyin": "jinbian",
+    "code": "PNH",
+    "initials": "jb",
+    "city": "金边"
+  },
+  {
+    "name": "阿雷格里港萨尔加多费尔霍国际机场",
+    "pinyin": "Aleigeligang",
+    "code": "POA",
+    "initials": "alglg",
+    "city": "阿雷格里港"
+  },
+  {
+    "name": "巴拿马城托库门国际机场",
+    "pinyin": "banama",
+    "code": "PTY",
+    "initials": "bnmc",
+    "city": "巴拿马城"
+  },
+  {
+    "name": "釜山金海国际机场",
+    "pinyin": "fushan",
+    "code": "PUS",
+    "initials": "fz",
+    "city": "釜山"
+  },
+  {
+    "name": "攀枝花保安营机场",
+    "pinyin": "panzhihua",
+    "code": "PZI",
+    "initials": "pzh",
+    "city": "攀枝花"
+  },
+  {
+    "name": "暹粒吴哥国际机场",
+    "pinyin": "xianli",
+    "code": "REP",
+    "initials": "xl",
+    "city": "暹粒"
+  },
+  {
+    "name": "仰光国际机场",
+    "pinyin": "yangguang",
+    "code": "RGN",
+    "initials": "yg",
+    "city": "仰光"
+  },
+  {
+    "name": "日照山字河国际机场",
+    "pinyin": "rizhao",
+    "code": "RIZ",
+    "initials": "rz",
+    "city": "日照"
+  },
+  {
+    "name": "日喀则和平机场",
+    "pinyin": "Rikaze",
+    "code": "RKZ",
+    "initials": "rkz",
+    "city": "日喀则"
+  },
+  {
+    "name": "巴彦淖尔天吉泰机场",
+    "pinyin": "bayannaoer",
+    "code": "RLK",
+    "initials": "byne",
+    "city": "巴彦淖尔"
+  },
+  {
+    "name": "基希讷乌机场",
+    "pinyin": "Chisinau",
+    "code": "RMO",
+    "initials": "Chisinau",
+    "city": "基希讷乌"
+  },
+  {
+    "name": "台中清泉岗机场",
+    "pinyin": "taizhong",
+    "code": "RMQ",
+    "initials": "tz",
+    "city": "台中"
+  },
+  {
+    "name": "哈立德国王国际机场",
+    "pinyin": "liyade",
+    "code": "RUH",
+    "initials": "lyd",
+    "city": "利雅得"
+  },
+  {
+    "name": "圣地亚哥国际机场",
+    "pinyin": "shengdiyage",
+    "code": "SAN",
+    "initials": "sdyg",
+    "city": "圣地亚哥"
+  },
+  {
+    "name": "仙台机场",
+    "pinyin": "xiantai",
+    "code": "SDJ",
+    "initials": "xt",
+    "city": "仙台"
+  },
+  {
+    "name": "西雅图塔科马国际机场",
+    "pinyin": "xiyatu",
+    "code": "SEA",
+    "initials": "xyt",
+    "city": "西雅图"
+  },
+  {
+    "name": "旧金山国际机场",
+    "pinyin": "jiujinshan",
+    "code": "SFO",
+    "initials": "jjs",
+    "city": "旧金山"
+  },
+  {
+    "name": "胡志明市新山一国际机场",
+    "pinyin": "huzhiming",
+    "code": "SGN",
+    "initials": "hzm",
+    "city": "胡志明"
+  },
+  {
+    "name": "沈阳桃仙国际机场",
+    "pinyin": "shenyang",
+    "code": "SHE",
+    "initials": "sy",
+    "city": "沈阳"
+  },
+  {
+    "name": "石河子花园机场",
+    "pinyin": "shihezi",
+    "code": "SHF",
+    "initials": "shz",
+    "city": "石河子"
+  },
+  {
+    "name": "秦皇岛山海关机场",
+    "pinyin": "qinhuangdao",
+    "code": "SHP",
+    "initials": "qhd",
+    "city": "秦皇岛"
+  },
+  {
+    "name": "荆州沙市机场",
+    "pinyin": "shashi",
+    "code": "SHS",
+    "initials": "ss",
+    "city": "沙市"
+  },
+  {
+    "name": "什里夫波特机场",
+    "pinyin": "shenlifubote",
+    "code": "SHV",
+    "initials": "slfbt",
+    "city": "什里夫波特"
+  },
+  {
+    "name": "圣何塞国际机场",
+    "pinyin": "shenghesai",
+    "code": "SJC",
+    "initials": "shs",
+    "city": "圣何塞"
+  },
+  {
+    "name": "石家庄正定国际机场",
+    "pinyin": "shijiazhuang",
+    "code": "SJW",
+    "initials": "sjz",
+    "city": "石家庄"
+  },
+  {
+    "name": "上饶三清山机场",
+    "pinyin": "shangrao",
+    "code": "SQD",
+    "initials": "sr",
+    "city": "上饶"
+  },
+  {
+    "name": "斯图加特机场",
+    "pinyin": "situjiate",
+    "code": "STR",
+    "initials": "stjt",
+    "city": "斯图加特"
+  },
+  {
+    "name": "莫斯科谢列梅捷沃国际机场",
+    "pinyin": "mosike",
+    "code": "SVO",
+    "initials": "msk",
+    "city": "莫斯科"
+  },
+  {
+    "name": "揭阳潮汕机场",
+    "pinyin": "shantou",
+    "code": "SWA",
+    "initials": "st",
+    "city": "汕头"
+  },
+  {
+    "name": "普洱思茅机场",
+    "pinyin": "puer",
+    "code": "SYM",
+    "initials": "pe",
+    "city": "普洱"
+  },
+  {
+    "name": "三亚凤凰国际机场",
+    "pinyin": "sanya",
+    "code": "SYX",
+    "initials": "sy",
+    "city": "三亚"
+  },
+  {
+    "name": "朔州滋润机场",
+    "pinyin": "Shuozhou",
+    "code": "SZH",
+    "initials": "Shuozhou",
+    "city": "朔州滋润机场"
+  },
+  {
+    "name": "苏州光福机场",
+    "pinyin": "suzhou",
+    "code": "SZV",
+    "initials": "sz",
+    "city": "苏州"
+  },
+  {
+    "name": "大邱国际机场",
+    "pinyin": "daqiu",
+    "code": "TAE",
+    "initials": "dq",
+    "city": "大邱"
+  },
+  {
+    "name": "青岛胶东国际机场",
+    "pinyin": "qingdao",
+    "code": "TAO",
+    "initials": "qd",
+    "city": "青岛"
+  },
+  {
+    "name": "塔城机场",
+    "pinyin": "tacheng",
+    "code": "TCG",
+    "initials": "tc",
+    "city": "塔城"
+  },
+  {
+    "name": "腾冲驼峰机场",
+    "pinyin": "tengchong",
+    "code": "TCZ",
+    "initials": "tc",
+    "city": "腾冲"
+  },
+  {
+    "name": "铜仁凤凰机场",
+    "pinyin": "tongren",
+    "code": "TEN",
+    "initials": "tr",
+    "city": "铜仁"
+  },
+  {
+    "name": "成都天府国际机场",
+    "pinyin": "chengdu",
+    "code": "TFU",
+    "initials": "cd",
+    "city": "成都天府"
+  },
+  {
+    "name": "通辽机场",
+    "pinyin": "tongliao",
+    "code": "TGO",
+    "initials": "tlf",
+    "city": "通辽"
+  },
+  {
+    "name": "甘肃天水机场",
+    "pinyin": "tianshui",
+    "code": "THQ",
+    "initials": "ts",
+    "city": "天水"
+  },
+  {
+    "name": "土耳其托卡特机场",
+    "pinyin": "TUOKATE",
+    "code": "TJK",
+    "initials": "TUOKATE",
+    "city": "托卡特机场"
+  },
+  {
+    "name": "吐鲁番交河机场",
+    "pinyin": "tulufan",
+    "code": "TLQ",
+    "initials": "tlf",
+    "city": "吐鲁番"
+  },
+  {
+    "name": "特拉维夫本古里安机场",
+    "pinyin": "telaweifu",
+    "code": "TLV",
+    "initials": "tlef",
+    "city": "特拉维夫"
+  },
+  {
+    "name": "济南遥墙国际机场",
+    "pinyin": "jinan",
+    "code": "TNA",
+    "initials": "jn",
+    "city": "济南"
+  },
+  {
+    "name": "通化三源浦机场",
+    "pinyin": "tonghua",
+    "code": "TNH",
+    "initials": "th",
+    "city": "通化"
+  },
+  {
+    "name": "富山机场",
+    "pinyin": "fushan",
+    "code": "TOY",
+    "initials": "fs",
+    "city": "富山"
+  },
+  {
+    "name": "台北桃园机场",
+    "pinyin": "taibei",
+    "code": "TPE",
+    "initials": "tb",
+    "city": "台北桃园"
+  },
+  {
+    "name": "台北松山机场",
+    "pinyin": "taibei",
+    "code": "TSA",
+    "initials": "tb",
+    "city": "台北松山"
+  },
+  {
+    "name": "天津滨海国际机场",
+    "pinyin": "tianjin",
+    "code": "TSN",
+    "initials": "tj",
+    "city": "天津"
+  },
+  {
+    "name": "唐山三女河机场",
+    "pinyin": "tangshan",
+    "code": "TVS",
+    "initials": "ts",
+    "city": "唐山"
+  },
+  {
+    "name": "图木舒克唐王城机场",
+    "pinyin": "Tumushuke",
+    "code": "TWC",
+    "initials": "TMSK",
+    "city": "图木舒克"
+  },
+  {
+    "name": "柏林泰格尔机场",
+    "pinyin": "bolin",
+    "code": "TXL",
+    "initials": "bl",
+    "city": "柏林"
+  },
+  {
+    "name": "黄山屯溪机场",
+    "pinyin": "huangshan",
+    "code": "TXN",
+    "initials": "hs",
+    "city": "黄山"
+  },
+  {
+    "name": "太原武宿国际机场",
+    "pinyin": "taiyuan",
+    "code": "TYN",
+    "initials": "ty",
+    "city": "太原"
+  },
+  {
+    "name": "成吉思汗国际机场",
+    "pinyin": "wulanbatuo",
+    "code": "UBN",
+    "initials": "wlbt",
+    "city": "乌兰巴托"
+  },
+  {
+    "name": "乌兰察布机场",
+    "pinyin": "Wulanchabu",
+    "code": "UCB",
+    "initials": "wlcb",
+    "city": "乌兰察布"
+  },
+  {
+    "name": "于默奥机场",
+    "pinyin": "yumoao",
+    "code": "UME",
+    "initials": "yma",
+    "city": "于默奥"
+  },
+  {
+    "name": "乌鲁木齐天山国际机场",
+    "pinyin": "wulumuqi",
+    "code": "URC",
+    "initials": "wlmq",
+    "city": "乌鲁木齐"
+  },
+  {
+    "name": "素叻他尼机场",
+    "pinyin": "wanlun",
+    "code": "URT",
+    "initials": "wl",
+    "city": "万伦"
+  },
+  {
+    "name": "榆林榆阳机场",
+    "pinyin": "yulin",
+    "code": "UYN",
+    "initials": "yl",
+    "city": "榆林"
+  },
+  {
+    "name": "维也纳施韦夏特机场",
+    "pinyin": "weiyena",
+    "code": "VIE",
+    "initials": "wyn",
+    "city": "维也纳"
+  },
+  {
+    "name": "符拉迪沃斯托克机场",
+    "pinyin": "fuladiwosituoke",
+    "code": "VVO",
+    "initials": "fldwstk",
+    "city": "符拉迪沃斯托克"
+  },
+  {
+    "name": "华沙弗里德里克·肖邦机场",
+    "pinyin": "huasha",
+    "code": "WAW",
+    "initials": "hs",
+    "city": "华沙"
+  },
+  {
+    "name": "十堰武当山机场",
+    "pinyin": "shiyan",
+    "code": "WDS",
+    "initials": "sy",
+    "city": "十堰"
+  },
+  {
+    "name": "潍坊机场",
+    "pinyin": "weifang",
+    "code": "WEF",
+    "initials": "wf",
+    "city": "潍坊"
+  },
+  {
+    "name": "威海大水泊机场",
+    "pinyin": "weihai",
+    "code": "WEH",
+    "initials": "wh",
+    "city": "威海"
+  },
+  {
+    "name": "武冈机场",
+    "pinyin": "shaoyang",
+    "code": "WGN",
+    "initials": "sy",
+    "city": "邵阳"
+  },
+  {
+    "name": "芜湖机场",
+    "pinyin": "Wuhu",
+    "code": "WHA",
+    "initials": "WH",
+    "city": "芜湖"
+  },
+  {
+    "name": "惠灵顿国际机场",
+    "pinyin": "huilingdun",
+    "code": "WLG",
+    "initials": "hld",
+    "city": "惠灵顿"
+  },
+  {
+    "name": "遵义茅台机场",
+    "pinyin": "zunyimaotai",
+    "code": "WMT",
+    "initials": "zymt",
+    "city": "遵义茅台"
+  },
+  {
+    "name": "文山普者黑机场",
+    "pinyin": "wenshan",
+    "code": "WNH",
+    "initials": "ws",
+    "city": "文山"
+  },
+  {
+    "name": "温州龙湾国际机场",
+    "pinyin": "wenzhou",
+    "code": "WNZ",
+    "initials": "wz",
+    "city": "温州"
+  },
+  {
+    "name": "乌海机场",
+    "pinyin": "wuhai",
+    "code": "WUA",
+    "initials": "wm",
+    "city": "乌海"
+  },
+  {
+    "name": "武汉天河国际机场",
+    "pinyin": "wuhan",
+    "code": "WUH",
+    "initials": "wh",
+    "city": "武汉"
+  },
+  {
+    "name": "武夷山机场",
+    "pinyin": "wuyishan",
+    "code": "WUS",
+    "initials": "wys",
+    "city": "武夷山"
+  },
+  {
+    "name": "无锡硕放机场",
+    "pinyin": "wuxi",
+    "code": "WUX",
+    "initials": "wx",
+    "city": "无锡"
+  },
+  {
+    "name": "梧州长洲岛机场",
+    "pinyin": "wuzhou",
+    "code": "WUZ",
+    "initials": "wz",
+    "city": "梧州"
+  },
+  {
+    "name": "万州五桥机场",
+    "pinyin": "wanzhou",
+    "code": "WXN",
+    "initials": "wz",
+    "city": "万州"
+  },
+  {
+    "name": "襄樊刘集机场",
+    "pinyin": "xiangfan",
+    "code": "XFN",
+    "initials": "xf",
+    "city": "襄樊"
+  },
+  {
+    "name": "西昌青山机场",
+    "pinyin": "xichang",
+    "code": "XIC",
+    "initials": "xc",
+    "city": "西昌"
+  },
+  {
+    "name": "锡林浩特机场",
+    "pinyin": "xilinhaote",
+    "code": "XIL",
+    "initials": "xlht",
+    "city": "锡林浩特"
+  },
+  {
+    "name": "厦门高崎国际机场",
+    "pinyin": "xiamen",
+    "code": "XMN",
+    "initials": "sm",
+    "city": "厦门"
+  },
+  {
+    "name": "西宁曹家堡机场",
+    "pinyin": "xining",
+    "code": "XNN",
+    "initials": "xn",
+    "city": "西宁"
+  },
+  {
+    "name": "邢台褡裢机场",
+    "pinyin": "xingtai",
+    "code": "XNT",
+    "initials": "xt",
+    "city": "邢台"
+  },
+  {
+    "name": "科马亚瓜机场",
+    "pinyin": "KEMAYAGUA",
+    "code": "XPL",
+    "initials": "KEMAYAGUA",
+    "city": "科马亚瓜"
+  },
+  {
+    "name": "徐州观音机场",
+    "pinyin": "xuzhou",
+    "code": "XUZ",
+    "initials": "xz",
+    "city": "徐州"
+  },
+  {
+    "name": "威利斯顿机场",
+    "pinyin": "Williston",
+    "code": "XWA",
+    "initials": "Williston",
+    "city": "威利斯顿机场"
+  },
+  {
+    "name": "宜宾菜坝机场",
+    "pinyin": "yibin",
+    "code": "YBP",
+    "initials": "yb",
+    "city": "宜宾"
+  },
+  {
+    "name": "运城盐湖国际机场",
+    "pinyin": "yuncheng",
+    "code": "YCU",
+    "initials": "yc",
+    "city": "运城"
+  },
+  {
+    "name": "宜春明月山机场",
+    "pinyin": "yichun",
+    "code": "YIC",
+    "initials": "yc",
+    "city": "宜春"
+  },
+  {
+    "name": "阿尔山伊尔施机场",
+    "pinyin": "AERSHAN",
+    "code": "YIE",
+    "initials": "aes",
+    "city": "阿尔山"
+  },
+  {
+    "name": "宜昌三峡国际机场",
+    "pinyin": "yichang",
+    "code": "YIH",
+    "initials": "yc",
+    "city": "宜昌"
+  },
+  {
+    "name": "伊宁机场",
+    "pinyin": "Yining",
+    "code": "YIN",
+    "initials": "yn",
+    "city": "伊宁"
+  },
+  {
+    "name": "义乌机场",
+    "pinyin": "yiwu",
+    "code": "YIW",
+    "initials": "yw",
+    "city": "义乌"
+  },
+  {
+    "name": "延吉朝阳川机场",
+    "pinyin": "yanji",
+    "code": "YNJ",
+    "initials": "yj",
+    "city": "延吉"
+  },
+  {
+    "name": "烟台蓬莱国际机场",
+    "pinyin": "yantai",
+    "code": "YNT",
+    "initials": "yt",
+    "city": "烟台"
+  },
+  {
+    "name": "盐城南洋机场",
+    "pinyin": "yancheng",
+    "code": "YNZ",
+    "initials": "yc",
+    "city": "盐城"
+  },
+  {
+    "name": "查干湖机场",
+    "pinyin": "songyuan",
+    "code": "YSQ",
+    "initials": "sy",
+    "city": "松原"
+  },
+  {
+    "name": "扬州泰州机场",
+    "pinyin": "yangzhou",
+    "code": "YTY",
+    "initials": "yz",
+    "city": "扬州"
+  },
+  {
+    "name": "蒙特利尔皮埃尔·埃利奥特·特鲁多国际机场",
+    "pinyin": "mengtelier",
+    "code": "YUL",
+    "initials": "mtle",
+    "city": "蒙特利尔"
+  },
+  {
+    "name": "玉树机场",
+    "pinyin": "yushu",
+    "code": "YUS",
+    "initials": "ys",
+    "city": "玉树"
+  },
+  {
+    "name": "多伦多皮尔森国际国际机场",
+    "pinyin": "duolunduo",
+    "code": "YYZ",
+    "initials": "dld",
+    "city": "多伦多"
+  },
+  {
+    "name": "昭通机场",
+    "pinyin": "Zhaotong",
+    "code": "ZAT",
+    "initials": "zt",
+    "city": "昭通"
+  },
+  {
+    "name": "湛江吴川机场",
+    "pinyin": "zhanjiang",
+    "code": "ZHA",
+    "initials": "zj",
+    "city": "湛江"
+  },
+  {
+    "name": "中卫香山机场",
+    "pinyin": "zhongwei",
+    "code": "ZHY",
+    "initials": "zw",
+    "city": "中卫"
+  },
+  {
+    "name": "苏黎世机场",
+    "pinyin": "sulishi",
+    "code": "ZRH",
+    "initials": "sls",
+    "city": "苏黎世"
+  },
+  {
+    "name": "珠海金湾机场",
+    "pinyin": "zhuhai",
+    "code": "ZUH",
+    "initials": "zh",
+    "city": "珠海"
+  },
+  {
+    "name": "遵义新舟国际机场",
+    "pinyin": "zunyixinzhou",
+    "code": "ZYI",
+    "initials": "zyxz",
+    "city": "遵义新舟"
+  }
+]
