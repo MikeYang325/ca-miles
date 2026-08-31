@@ -51,9 +51,9 @@ jobs:
               && grep -q 'lovefly-tools.css?v=20260831-airchina-logo-3' /tmp/ca-miles.html \
               && grep -q 'lovefly-release" content="20260831-partner-airlines-1' /tmp/ca-miles.html \
               && grep -q 'airline-codes' /tmp/ca-miles.html; then
-              partner_result="$(curl -fsS --max-time 20 'https://ca-miles.lovefly.club/api/airchina/mileage' \
+              partner_result="$(curl -sS --max-time 20 'https://ca-miles.lovefly.club/api/airchina/mileage' \
                 -H 'Content-Type: application/json' \
-                --data '{"memberGrade":"Normal","segments":[{"flightDate":"2026-09-15","flightNo":"LH720","origin":"FRA","destination":"PEK","cabin":"Y"}]}')"
+                --data '{"memberGrade":"Normal","segments":[{"flightDate":"2026-09-15","flightNo":"LH720","origin":"FRA","destination":"PEK","cabin":"Y"}]}' || true)"
               if echo "$partner_result" | grep -q '"flightNo":"LH720"' \
                 && echo "$partner_result" | grep -q '"rate":"110%"'; then
                 echo 'CA_MILES_PARTNER_AIRLINE_DEPLOYMENT=PASS'
