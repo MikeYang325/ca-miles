@@ -184,13 +184,11 @@ input::placeholder { color: #999; }
 .origin::placeholder, .destination::placeholder { font-family: Arial, "Microsoft YaHei", "PingFang SC", sans-serif; font-weight: 400; letter-spacing: 0; text-transform: none; }
 input:read-only { color: #777; background: #f7f7f7; }
 
-.flight-field { display: grid; grid-template-columns: 124px minmax(0, 1fr); gap: 5px; }
+.flight-field { display: grid; grid-template-columns: 150px minmax(80px, 110px); gap: 5px; justify-content: start; }
 .flight-subhead { display: none; }
 .airline-field { position: relative; min-width: 0; }
 .airline-field select { padding: 0 6px; }
-.airline-field .airline { color: transparent !important; text-shadow: none; }
 .airline-field option { color: #444; }
-.airline-code { position: absolute; inset: 0 22px 0 7px; display: flex; align-items: center; overflow: hidden; color: #444; font-size: 12px; font-weight: 700; pointer-events: none; white-space: nowrap; }
 .flight-number { padding-inline: 6px; text-transform: uppercase; }
 .flight-number, .origin, .destination, .cabin { font-family: Consolas, Menlo, monospace; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; }
 .arrow { display: grid; height: 34px; place-items: center; color: var(--brand); }
@@ -336,7 +334,7 @@ footer code { color: #555; overflow-wrap: anywhere; }
   .segment label:nth-of-type(5) { grid-column: 3; grid-row: 2; z-index: 1; width: 78px; justify-self: end; }
   .segment .remove { position: absolute; top: 2px; right: 2px; width: 40px; height: 40px; }
   input, select, .date-control { height: 44px; }
-  .flight-field { grid-template-columns: minmax(96px, .9fr) minmax(64px, 1fr); gap: 4px 6px; }
+  .flight-field { grid-template-columns: minmax(0, 1.25fr) minmax(72px, .75fr); gap: 4px 6px; }
   .flight-subhead { display: block; overflow: hidden; color: #555; font-size: 11px; line-height: 1.25; text-overflow: ellipsis; white-space: nowrap; }
   .airline-subhead { grid-column: 1; grid-row: 1; }
   .number-subhead { grid-column: 2; grid-row: 1; }

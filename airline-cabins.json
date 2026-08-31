@@ -1,0 +1,1057 @@
+{
+  "source": "Air China PhoenixMiles",
+  "referenceRoute": "PEK-SHA",
+  "referenceDate": "2026-08-31",
+  "airlines": {
+    "NZ": [
+      {
+        "subClassName": "D/C",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "J/Z",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "Y/U/O/A/B/E",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "M",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "Q/H/V/T/W",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "N/K/G/S/L/P/F",
+        "rate": "0%"
+      }
+    ],
+    "LH": [
+      {
+        "subClassName": "F",
+        "rate": "300%"
+      },
+      {
+        "subClassName": "A",
+        "rate": "250%"
+      },
+      {
+        "subClassName": "C/J",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "D",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "Z",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "Y/G/E",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "B/P",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "N",
+        "rate": "90%"
+      },
+      {
+        "subClassName": "M/H/U/Q",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "V/S/W",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "T/L",
+        "rate": "25%"
+      },
+      {
+        "subClassName": "K/R",
+        "rate": "0%"
+      }
+    ],
+    "TG": [
+      {
+        "subClassName": "F",
+        "rate": "250%"
+      },
+      {
+        "subClassName": "A/P",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "C/D",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "Z/J",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "B/Q/H/M/Y",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "K/S/T",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "E/L",
+        "rate": "0%"
+      }
+    ],
+    "AC": [
+      {
+        "subClassName": "C/D/J",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "Z/P",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "E/O",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "Y/B/M/A",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "U/H/Q",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "W/V",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "K/L/S/T/G",
+        "rate": "0%"
+      }
+    ],
+    "TP": [
+      {
+        "subClassName": "Z/C/D/J",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "M/Q/V/Y/B/H",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "K/L/P/S/U/W/G",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "E/N/T/R",
+        "rate": "0%"
+      }
+    ],
+    "MS": [
+      {
+        "subClassName": "Z/C/D/J",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "B/Y",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "H/Q/M/K",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "L/V",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "G/E/T/S",
+        "rate": "25%"
+      },
+      {
+        "subClassName": "F/P/A/U/W/N",
+        "rate": "0%"
+      }
+    ],
+    "AI": [
+      {
+        "subClassName": "F",
+        "rate": "250%"
+      },
+      {
+        "subClassName": "C",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "D/J/Z",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "A/R",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "Y/B/M/H",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "N",
+        "rate": "90%"
+      },
+      {
+        "subClassName": "K/Q",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "V/W/G/L/U",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "T/S",
+        "rate": "25%"
+      },
+      {
+        "subClassName": "E/P",
+        "rate": "0%"
+      }
+    ],
+    "LO": [
+      {
+        "subClassName": "C",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "D",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "P",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "Y/Z/R/F/A/B/E/H/M",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "S/T/V/W/G/K/Q",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "L/U/N/J/O",
+        "rate": "0%"
+      }
+    ],
+    "SQ": [
+      {
+        "subClassName": "F/A",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "D/J/Z/U/C",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "S/T",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "L/E/Y/P/R/B",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "H/M/W",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "G/N/Q/V",
+        "rate": "0%"
+      }
+    ],
+    "BR": [
+      {
+        "subClassName": "D/C/J",
+        "rate": "130%"
+      },
+      {
+        "subClassName": "K/L/T",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "B/P/M/Y",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "H",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "S/Q",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "O/V/W/G/N/R/E/A",
+        "rate": "0%"
+      }
+    ],
+    "OU": [
+      {
+        "subClassName": "Z/D/C",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "F/H/K/M/Q/Y/A/B",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "J/O/P/S/V/W",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "E/L/G/N/R/T/U",
+        "rate": "0%"
+      }
+    ],
+    "JP": [],
+    "UA": [
+      {
+        "subClassName": "C/D/J",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "P/Z",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "O/Y",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "B/E/M/U/A",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "R",
+        "rate": "90%"
+      },
+      {
+        "subClassName": "V/Q/H/W",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "S/T",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "K/L/G",
+        "rate": "25%"
+      },
+      {
+        "subClassName": "N",
+        "rate": "0%"
+      }
+    ],
+    "NH": [
+      {
+        "subClassName": "A/F/J",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "C/D/Z",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "Y/E/B/M/G",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "N/P/U/Q/H",
+        "rate": "70%"
+      },
+      {
+        "subClassName": "S/W/T/V",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "K/L",
+        "rate": "30%"
+      },
+      {
+        "subClassName": "R",
+        "rate": "0%"
+      }
+    ],
+    "O6": [],
+    "ET": [
+      {
+        "subClassName": "C",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "J/D",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "B/P/Y/G/S",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "Q/H/K/L/M/T/V",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "U/W/E/O",
+        "rate": "25%"
+      },
+      {
+        "subClassName": "R/N/Z",
+        "rate": "0%"
+      }
+    ],
+    "TA": [
+      {
+        "subClassName": "C",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "D/J",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "K/A",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "Y/M/B",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "E/V/Q/H",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "L/Z/P/O/G",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "T/W/U/S",
+        "rate": "25%"
+      }
+    ],
+    "AV": [
+      {
+        "subClassName": "C",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "J/D",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "A/K",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "B/Y/M",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "E/V/Q/H",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "L/G/Z/P/O",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "W/U/T/S",
+        "rate": "25%"
+      },
+      {
+        "subClassName": "N/R",
+        "rate": "0%"
+      }
+    ],
+    "LR": [
+      {
+        "subClassName": "C",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "D/J",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "K/A",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "M/B/Y",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "E/V/Q/H",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "L/G/O/P/Z",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "T/W/U/S",
+        "rate": "25%"
+      }
+    ],
+    "T0": [],
+    "2K": [],
+    "OS": [
+      {
+        "subClassName": "Z/C/D/J",
+        "rate": "130%"
+      },
+      {
+        "subClassName": "G/E",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "N/Y/P/B",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "M/Q/U/V/W/H",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "R/L/S/K/T",
+        "rate": "0%"
+      }
+    ],
+    "A3": [],
+    "OZ": [
+      {
+        "subClassName": "C",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "H/U/A/B/E/M/Y",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "S/Q/K",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "V",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "N/W/D/G/T/J/L/R/Z",
+        "rate": "0%"
+      }
+    ],
+    "CM": [
+      {
+        "subClassName": "R/C/D/J",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "Y",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "B/H/M",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "Q/K/V",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "W/O/S/U",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "E/A/T/L",
+        "rate": "25%"
+      }
+    ],
+    "LX": [
+      {
+        "subClassName": "F/A",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "Z/J/C/D",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "G/E",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "H/M/U/Y/P/B",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "N",
+        "rate": "90%"
+      },
+      {
+        "subClassName": "Q/S/V/W",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "T",
+        "rate": "25%"
+      },
+      {
+        "subClassName": "R",
+        "rate": "0%"
+      }
+    ],
+    "SN": [
+      {
+        "subClassName": "C/D/J",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "Z",
+        "rate": "130%"
+      },
+      {
+        "subClassName": "G/E",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "Y/B/U/P/M/H",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "N",
+        "rate": "90%"
+      },
+      {
+        "subClassName": "Q/V/W/O/S",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "T",
+        "rate": "25%"
+      },
+      {
+        "subClassName": "F/K/R/A/L",
+        "rate": "0%"
+      }
+    ],
+    "SA": [
+      {
+        "subClassName": "C/J",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "Z/P",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "Y/B/K/M/D",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "H",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "Q/S/T/V",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "L/W/G",
+        "rate": "25%"
+      },
+      {
+        "subClassName": "U/N/R/F/A/O/E",
+        "rate": "0%"
+      }
+    ],
+    "TK": [
+      {
+        "subClassName": "D/C",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "K/Z",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "J",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "B/H/M/Y/A",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "Q/S/O/E",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "L/T/V",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "F/U/P/R/N/W/G",
+        "rate": "0%"
+      }
+    ],
+    "ZH": [
+      {
+        "subClassName": "J",
+        "rate": "300%"
+      },
+      {
+        "subClassName": "C",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "D",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "Z",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "R/G/Y",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "U/B/M",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "E",
+        "rate": "90%"
+      },
+      {
+        "subClassName": "H/Q/V",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "W/S/T",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "K/L/P/A",
+        "rate": "25%"
+      }
+    ],
+    "CX": [
+      {
+        "subClassName": "F",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "J/C/A",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "P/D/I",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "W",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "B/E/R/Y",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "K/H",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "L/M/V",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "Q/N/S",
+        "rate": "25%"
+      },
+      {
+        "subClassName": "O/T",
+        "rate": "0%"
+      }
+    ],
+    "B7": [],
+    "SC": [
+      {
+        "subClassName": "J",
+        "rate": "300%"
+      },
+      {
+        "subClassName": "C",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "D",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "Z",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "R/G/Y",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "U/B/M",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "E",
+        "rate": "90%"
+      },
+      {
+        "subClassName": "H/Q/V",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "W/S/T",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "P/L/K",
+        "rate": "25%"
+      }
+    ],
+    "TV": [
+      {
+        "subClassName": "C",
+        "rate": "300%"
+      },
+      {
+        "subClassName": "D",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "Y/A",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "M/B",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "W",
+        "rate": "90%"
+      },
+      {
+        "subClassName": "H/K",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "Z/L/J",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "O/Q/T/V/G",
+        "rate": "25%"
+      },
+      {
+        "subClassName": "N/P/R/S/U/E/F",
+        "rate": "0%"
+      }
+    ],
+    "NX": [
+      {
+        "subClassName": "C/M/P/Q/R/S/T/U/V/W/A/E/J/D/Y/Z/B/G/K/H/L/N",
+        "rate": "0%"
+      }
+    ],
+    "CA": [
+      {
+        "subClassName": "F/J",
+        "rate": "300%"
+      },
+      {
+        "subClassName": "A/C",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "D",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "Z",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "Y/R/G",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "M/U/B",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "E",
+        "rate": "90%"
+      },
+      {
+        "subClassName": "H/Q/V",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "W/S/T",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "P/L/K",
+        "rate": "25%"
+      },
+      {
+        "subClassName": "N",
+        "rate": "0%"
+      }
+    ],
+    "HO": [
+      {
+        "subClassName": "J/C",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "D/A",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "Y/R",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "B",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "U/M/H/Q",
+        "rate": "75%"
+      }
+    ],
+    "KY": [
+      {
+        "subClassName": "J",
+        "rate": "300%"
+      },
+      {
+        "subClassName": "C",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "R/Y/G",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "U/B/M",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "E",
+        "rate": "90%"
+      },
+      {
+        "subClassName": "Q/V/H",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "S/T/W/Z",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "A/O/P/L/D/K",
+        "rate": "25%"
+      }
+    ],
+    "VL": [
+      {
+        "subClassName": "J/C",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "D",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "Z",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "Y",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "P/B",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "U/Q/H/M",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "S/W/V",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "L/T",
+        "rate": "25%"
+      }
+    ],
+    "AZ": [
+      {
+        "subClassName": "J/C",
+        "rate": "200%"
+      },
+      {
+        "subClassName": "D",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "Z",
+        "rate": "125%"
+      },
+      {
+        "subClassName": "P/G/E/Y",
+        "rate": "110%"
+      },
+      {
+        "subClassName": "U/H/B/M",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "Q",
+        "rate": "75%"
+      },
+      {
+        "subClassName": "V/W",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "T/L",
+        "rate": "25%"
+      },
+      {
+        "subClassName": "K/R",
+        "rate": "0%"
+      }
+    ]
+  }
+}
