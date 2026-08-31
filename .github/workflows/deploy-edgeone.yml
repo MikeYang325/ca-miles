@@ -8,13 +8,42 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      EDGEONE_DEPLOY_HOOK: ${{ secrets.EDGEONE_DEPLOY_HOOK }}
     steps:
-      - name: Trigger EdgeOne deployment
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.11.0
+
+      - name: Deploy existing EdgeOne project
+        env:
+          EDGEONE_API_TOKEN: ${{ secrets.EDGEONE_API_TOKEN }}
         run: |
-          if [ -z "$EDGEONE_DEPLOY_HOOK" ]; then
-            echo "EDGEONE_DEPLOY_HOOK is not configured; skipping deployment."
-            exit 0
-          fi
-          curl --fail --silent --show-error --request POST "$EDGEONE_DEPLOY_HOOK"
+          set -euo pipefail
+          : "${EDGEONE_API_TOKEN:?EDGEONE_API_TOKEN is missing}"
+          API='https://pages-api.edgeone.ai/v1'
+          DOMAIN='ca-miles.lovefly.club'
+          projects="$(curl -fsS "$API" \
+            -H 'Content-Type: application/json' \
+            -H "Authorization: Bearer ${EDGEONE_API_TOKEN}" \
+            --data-binary '{"Action":"DescribePagesProjects","Limit":100,"Offset":0}')"
+          test "$(echo "$projects" | jq -r '.Code')" = 0
+          project_name="$(echo "$projects" | jq -r --arg d "$DOMAIN" '.Data.Response.Projects[] | select(any(.CustomDomains[]?; .Domain==$d)) | .Name' | head -1)"
+          test "$project_name" = 'ca-miles'
+          npm install --global edgeone
+          edgeone makers deploy . -n "$project_name" -t "$EDGEONE_API_TOKEN" -e production
+
+      - name: Verify production logo
+        run: |
+          set -euo pipefail
+          for i in $(seq 1 24); do
+            if curl -fsS --max-time 20 'https://ca-miles.lovefly.club/' -o /tmp/ca-miles.html \
+              && grep -q 'https://webresource.airchina.com.cn/_next/static/media/logo.85385003.png' /tmp/ca-miles.html \
+              && ! grep -q '/air-china-wordmark.svg' /tmp/ca-miles.html; then
+              echo 'CA_MILES_LOGO_DEPLOYMENT=PASS'
+              exit 0
+            fi
+            sleep 5
+          done
+          echo 'production logo verification failed' >&2
+          exit 1
