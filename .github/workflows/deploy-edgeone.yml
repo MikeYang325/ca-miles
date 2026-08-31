@@ -48,6 +48,7 @@ jobs:
           for i in $(seq 1 24); do
             if curl -fsS --max-time 20 'https://ca-miles.lovefly.club/' -o /tmp/ca-miles.html \
               && grep -q '/air-china-logo-light.png' /tmp/ca-miles.html \
+              && grep -q 'theme.css?v=20260831-date-display-2' /tmp/ca-miles.html \
               && grep -q 'lovefly-tools.css?v=20260831-airchina-logo-3' /tmp/ca-miles.html \
               && grep -q 'lovefly-release" content="20260831-partner-airlines-2' /tmp/ca-miles.html \
               && grep -q 'AZ · 意大利航空' /tmp/ca-miles.html \

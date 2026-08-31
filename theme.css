@@ -156,7 +156,8 @@ input:focus, select:focus { border-color: var(--focus); box-shadow: 0 0 0 2px rg
 input::placeholder { color: #999; }
 .date-field { position: relative; }
 .date-display { position: absolute; inset: 0; z-index: 1; display: flex; align-items: center; padding: 0 9px; overflow: hidden; color: #444; pointer-events: none; white-space: nowrap; text-overflow: ellipsis; }
-.flight-date { position: relative; z-index: 0; color: transparent; caret-color: transparent; }
+.flight-date { position: relative; z-index: 0; color: transparent !important; caret-color: transparent; -webkit-text-fill-color: transparent; }
+.flight-date::-webkit-datetime-edit, .flight-date::-webkit-datetime-edit-fields-wrapper, .flight-date::-webkit-datetime-edit-text, .flight-date::-webkit-datetime-edit-month-field, .flight-date::-webkit-datetime-edit-day-field, .flight-date::-webkit-datetime-edit-year-field { color: transparent; }
 .date-field:focus-within .date-display { color: #444; }
 .origin::placeholder, .destination::placeholder { font-family: Arial, "Microsoft YaHei", "PingFang SC", sans-serif; font-weight: 400; letter-spacing: 0; text-transform: none; }
 input:read-only { color: #777; background: #f7f7f7; }
