@@ -27,8 +27,11 @@ jobs:
             -H 'Content-Type: application/json' \
             -H "Authorization: Bearer ${EDGEONE_API_TOKEN}" \
             --data-binary '{"Action":"DescribePagesProjects","Limit":100,"Offset":0}')"
-          test "$(echo "$projects" | jq -r '.Code')" = 0
+          describe_code="$(echo "$projects" | jq -r '.Code')"
+          echo "edgeone_describe_code=$describe_code"
+          test "$describe_code" = 0
           project_name="$(echo "$projects" | jq -r --arg d "$DOMAIN" '.Data.Response.Projects[] | select(any(.CustomDomains[]?; .Domain==$d)) | .Name' | head -1)"
+          echo "edgeone_existing_project=$project_name"
           test "$project_name" = 'ca-miles'
           npm install --global edgeone
           edgeone makers deploy . -n "$project_name" -t "$EDGEONE_API_TOKEN" -e production
