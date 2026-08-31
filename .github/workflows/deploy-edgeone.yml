@@ -42,18 +42,25 @@ jobs:
           test "$(echo "$deployment" | jq -r '.Code')" = 0
           echo "edgeone_deployment_id=$(echo "$deployment" | jq -r '.Data.Response.DeploymentId // .Data.DeploymentId // "unknown"')"
 
-      - name: Verify production logo
+      - name: Verify production build and partner airline API
         run: |
           set -euo pipefail
           for i in $(seq 1 24); do
             if curl -fsS --max-time 20 'https://ca-miles.lovefly.club/' -o /tmp/ca-miles.html \
               && grep -q '/air-china-logo-light.png' /tmp/ca-miles.html \
               && grep -q 'lovefly-tools.css?v=20260831-airchina-logo-3' /tmp/ca-miles.html \
-              && ! grep -q 'background:#171717' /tmp/ca-miles.html; then
-              echo 'CA_MILES_LOGO_DEPLOYMENT=PASS'
-              exit 0
+              && grep -q 'lovefly-release" content="20260831-partner-airlines-1' /tmp/ca-miles.html \
+              && grep -q 'airline-codes' /tmp/ca-miles.html; then
+              partner_result="$(curl -fsS --max-time 20 'https://ca-miles.lovefly.club/api/airchina/mileage' \
+                -H 'Content-Type: application/json' \
+                --data '{"memberGrade":"Normal","segments":[{"flightDate":"2026-09-15","flightNo":"LH720","origin":"FRA","destination":"PEK","cabin":"Y"}]}')"
+              if echo "$partner_result" | grep -q '"flightNo":"LH720"' \
+                && echo "$partner_result" | grep -q '"rate":"110%"'; then
+                echo 'CA_MILES_PARTNER_AIRLINE_DEPLOYMENT=PASS'
+                exit 0
+              fi
             fi
             sleep 5
           done
-          echo 'production logo verification failed' >&2
+          echo 'production partner-airline verification failed' >&2
           exit 1
