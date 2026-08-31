@@ -11,10 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22.11.0
-
       - name: Deploy existing EdgeOne project
         env:
           EDGEONE_API_TOKEN: ${{ secrets.EDGEONE_API_TOKEN }}
@@ -30,8 +26,21 @@ jobs:
           test "$(echo "$projects" | jq -r '.Code')" = 0
           project_name="$(echo "$projects" | jq -r --arg d "$DOMAIN" '.Data.Response.Projects[] | select(any(.CustomDomains[]?; .Domain==$d)) | .Name' | head -1)"
           test "$project_name" = 'ca-miles-new'
-          npm install --global edgeone
-          edgeone makers deploy . -n "$project_name" -t "$EDGEONE_API_TOKEN" -e production
+          project_id="$(echo "$projects" | jq -r --arg n "$project_name" '.Data.Response.Projects[] | select(.Name==$n) | .ProjectId' | head -1)"
+          project_provider="$(echo "$projects" | jq -r --arg n "$project_name" '.Data.Response.Projects[] | select(.Name==$n) | .Provider' | head -1)"
+          test -n "$project_id"
+          test "$project_provider" = 'Github'
+          deployment_payload="$(jq -nc \
+            --arg project_id "$project_id" \
+            --arg commit "${GITHUB_SHA}" \
+            --arg message "${GITHUB_EVENT_HEAD_COMMIT_MESSAGE:-Deploy from GitHub Actions}" \
+            '{Action:"CreatePagesDeployment",ProjectId:$project_id,ViaMeta:"ReDeploy",Env:"Production",Provider:"Github",RepoBranch:"main",RepoCommitHash:$commit,RepoCommitMsg:$message}')"
+          deployment="$(curl -fsS "$API" \
+            -H 'Content-Type: application/json' \
+            -H "Authorization: Bearer ${EDGEONE_API_TOKEN}" \
+            --data-binary "$deployment_payload")"
+          test "$(echo "$deployment" | jq -r '.Code')" = 0
+          echo "edgeone_deployment_id=$(echo "$deployment" | jq -r '.Data.Response.DeploymentId // .Data.DeploymentId // "unknown"')"
 
       - name: Verify production logo
         run: |
