@@ -3,6 +3,14 @@ import { writeFile } from 'node:fs/promises';
 const url = 'https://ffp.airchina.com.cn/apigateway/user/jsonp/mileageCumulateCalculation';
 const airlines = 'NZ LH TG AC TP MS AI LO SQ BR OU JP UA NH O6 ET TA AV LR T0 2K OS A3 OZ CM LX SN SA TK ZH CX B7 SC TV NX CA HO KY VL AZ'.split(' ');
 const referenceDate = new Date().toISOString().slice(0, 10);
+const OFFICIAL_TABLE_FALLBACKS = {
+  A3: [
+    { subClassName: 'A/C/D/Z', rate: '150%' },
+    { subClassName: 'Y/B/G/W/H/L/M/V/Q/O/J/S/K', rate: '100%' },
+    { subClassName: 'E/T/U/P', rate: '50%' },
+    { subClassName: 'R/N/X/I', rate: '0%' },
+  ],
+};
 
 async function query(code) {
   const payload = { org: 'PEK', des: 'SHA', flightDate: referenceDate, flightNo: `${code}0`, memberGrade: 'Normal' };
@@ -27,7 +35,7 @@ async function query(code) {
 
 const result = {};
 for (let index = 0; index < airlines.length; index += 5) {
-  for (const [code, tiers] of await Promise.all(airlines.slice(index, index + 5).map(query))) result[code] = tiers;
+  for (const [code, tiers] of await Promise.all(airlines.slice(index, index + 5).map(query))) result[code] = tiers.length ? tiers : OFFICIAL_TABLE_FALLBACKS[code] || [];
 }
 
 await writeFile('airline-cabins.json', `${JSON.stringify({ source: 'Air China PhoenixMiles', referenceRoute: 'PEK-SHA', referenceDate, airlines: result }, null, 2)}\n`);

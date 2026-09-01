@@ -535,7 +535,24 @@
         "rate": "0%"
       }
     ],
-    "A3": [],
+    "A3": [
+      {
+        "subClassName": "A/C/D/Z",
+        "rate": "150%"
+      },
+      {
+        "subClassName": "Y/B/G/W/H/L/M/V/Q/O/J/S/K",
+        "rate": "100%"
+      },
+      {
+        "subClassName": "E/T/U/P",
+        "rate": "50%"
+      },
+      {
+        "subClassName": "R/N/X/I",
+        "rate": "0%"
+      }
+    ],
     "OZ": [
       {
         "subClassName": "C",

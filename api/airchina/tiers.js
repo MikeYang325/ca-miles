@@ -1,5 +1,6 @@
 const OFFICIAL_URL = 'https://ffp.airchina.com.cn/apigateway/user/jsonp/mileageCumulateCalculation';
 const GRADES = new Set(['Normal', 'Junior', 'Silver', 'Gold', 'Platinum', 'LifetimePlatinum']);
+const A3_CA = require('../../program-rules.json').programs.A3.partners.CA;
 
 module.exports = async function handler(request, response) {
   response.setHeader('Access-Control-Allow-Origin', '*');
@@ -9,6 +10,7 @@ module.exports = async function handler(request, response) {
   if (request.method !== 'POST') return response.status(405).json({ success: false, message: '仅支持 POST 请求' });
   try {
     const input = typeof request.body === 'string' ? JSON.parse(request.body) : request.body || {};
+    const targetProgram = String(input.targetProgram || 'CA').toUpperCase();
     const payload = {
       org: String(input.origin || '').toUpperCase().replace(/\s+/g, ''),
       des: String(input.destination || '').toUpperCase().replace(/\s+/g, ''),
@@ -18,7 +20,12 @@ module.exports = async function handler(request, response) {
     };
     if (!/^[A-Z]{3}$/.test(payload.org) || !/^[A-Z]{3}$/.test(payload.des) || payload.org === payload.des) return response.status(400).json({ success: false, message: '机场三字码无效' });
     if (!/^\d{4}-\d{2}-\d{2}$/.test(payload.flightDate)) return response.status(400).json({ success: false, message: '日期无效' });
-    if (!/^[A-Z]{2}\d{1,4}[A-Z]?$/.test(payload.flightNo)) return response.status(400).json({ success: false, message: '航班号无效' });
+    if (!/^[A-Z0-9]{2}\d{1,4}[A-Z]?$/.test(payload.flightNo)) return response.status(400).json({ success: false, message: '航班号无效' });
+    if (targetProgram === 'A3') {
+      if (payload.flightNo.slice(0, 2) !== 'CA') return response.status(422).json({ success: false, message: 'A3 当前先支持累计国航 CA' });
+      return response.status(200).json({ success: true, source: 'Aegean Miles+Bonus', targetProgram, tiers: A3_CA.rules.map(item => ({ ...item, availableMileage: 0, gradingMileage: 0, gradingSegments: 0 })) });
+    }
+    if (targetProgram !== 'CA') return response.status(400).json({ success: false, message: '暂不支持该常旅客计划' });
     if (!GRADES.has(payload.memberGrade)) return response.status(400).json({ success: false, message: '会员卡等无效' });
     const upstream = await fetch(OFFICIAL_URL, {
       method: 'POST',
