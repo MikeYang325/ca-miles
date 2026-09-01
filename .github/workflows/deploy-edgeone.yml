@@ -42,30 +42,28 @@ jobs:
           test "$(echo "$deployment" | jq -r '.Code')" = 0
           echo "edgeone_deployment_id=$(echo "$deployment" | jq -r '.Data.Response.DeploymentId // .Data.DeploymentId // "unknown"')"
 
-      - name: Verify production build and partner airline API
+      - name: Verify production build and A3 mileage API
         run: |
           set -euo pipefail
           for i in $(seq 1 24); do
             if curl -fsS --max-time 20 'https://ca-miles.lovefly.club/' -o /tmp/ca-miles.html \
               && grep -q 'https://ffp.airchina.com.cn/img/lg.png' /tmp/ca-miles.html \
-              && grep -q 'lovefly-wordmark.svg' /tmp/ca-miles.html \
-              && grep -q 'theme.css?v=20260831-date-picker-1' /tmp/ca-miles.html \
-              && grep -q 'lovefly-tools.css?v=20260831-airchina-logo-7' /tmp/ca-miles.html \
-              && grep -q 'lovefly-release" content="20260831-partner-airlines-2' /tmp/ca-miles.html \
-              && grep -q 'AZ · 意大利航空' /tmp/ca-miles.html \
+              && grep -q '第一步：选择常旅客计划' /tmp/ca-miles.html \
+              && grep -q 'Miles+Bonus（A3）' /tmp/ca-miles.html \
+              && grep -q 'program-rules.json' /tmp/ca-miles.html \
+              && grep -q 'targetProgram' /tmp/ca-miles.html \
               && grep -q 'date-control' /tmp/ca-miles.html \
               && grep -q 'class="cabin"' /tmp/ca-miles.html \
               && curl -fsS --max-time 20 'https://ca-miles.lovefly.club/airports.json' -o /tmp/ca-miles-airports.json \
-              && test "$(jq length /tmp/ca-miles-airports.json)" -ge 4000 \
-              && jq -e 'any(.[]; .code == "EZE")' /tmp/ca-miles-airports.json >/dev/null \
-              && curl -fsS --max-time 20 'https://ca-miles.lovefly.club/airline-cabins.json' -o /tmp/ca-miles-airline-cabins.json \
-              && test "$(jq '.airlines | length' /tmp/ca-miles-airline-cabins.json)" -ge 35; then
-              partner_result="$(curl -sS --max-time 20 'https://ca-miles.lovefly.club/api/airchina/mileage' \
+              && jq -e 'length >= 300 and any(.[]; .code == "PEK")' /tmp/ca-miles-airports.json >/dev/null \
+              && curl -fsS --max-time 20 'https://ca-miles.lovefly.club/program-rules.json' -o /tmp/ca-miles-program-rules.json \
+              && jq -e '.programs.A3.partners.CA.rules | length == 10' /tmp/ca-miles-program-rules.json >/dev/null; then
+              a3_result="$(curl -sS --max-time 20 'https://ca-miles.lovefly.club/api/airchina/mileage' \
                 -H 'Content-Type: application/json' \
-                --data '{"memberGrade":"Normal","segments":[{"flightDate":"2026-09-15","flightNo":"LH720","origin":"FRA","destination":"PEK","cabin":"Y"}]}' || true)"
-              if echo "$partner_result" | grep -q '"flightNo":"LH720"' \
-                && echo "$partner_result" | grep -q '"rate":"110%"'; then
-                echo 'CA_MILES_PARTNER_AIRLINE_DEPLOYMENT=PASS'
+                --data '{"targetProgram":"A3","memberGrade":"Normal","segments":[{"flightDate":"2026-09-15","flightNo":"CA183","origin":"PEK","destination":"SHA","cabin":"C"}]}' || true)"
+              if echo "$a3_result" | grep -q '"targetProgram":"A3"' \
+                && echo "$a3_result" | grep -q '"availableMileage":1631'; then
+                echo 'CA_MILES_A3_DEPLOYMENT=PASS'
                 exit 0
               fi
             fi
