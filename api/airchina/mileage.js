@@ -1,6 +1,5 @@
 const OFFICIAL_URL = 'https://ffp.airchina.com.cn/apigateway/user/jsonp/mileageCumulateCalculation';
 const GRADES = new Set(['Normal', 'Junior', 'Silver', 'Gold', 'Platinum', 'LifetimePlatinum']);
-const A3_CA = require('../../program-rules.json').programs.A3.partners.CA;
 
 function cleanSegment(segment = {}) {
   return {
@@ -15,19 +14,19 @@ function cleanSegment(segment = {}) {
 function validateSegment(segment, index) {
   const prefix = `第 ${index + 1} 段`;
   if (!/^\d{4}-\d{2}-\d{2}$/.test(segment.flightDate)) return `${prefix}日期无效`;
-  if (!/^[A-Z0-9]{2}\d{1,4}[A-Z]?$/.test(segment.flightNo)) return `${prefix}航班号无效`;
+  if (!/^[A-Z]{2}\d{1,4}[A-Z]?$/.test(segment.flightNo)) return `${prefix}航班号无效`;
   if (!/^[A-Z]{3}$/.test(segment.origin) || !/^[A-Z]{3}$/.test(segment.destination)) return `${prefix}机场三字码无效`;
   if (segment.origin === segment.destination) return `${prefix}起点与终点不能相同`;
   if (!/^[A-Z]$/.test(segment.cabin)) return `${prefix}舱位代码无效`;
   return '';
 }
 
-async function fetchOfficialTiers(segment, memberGrade, index, flightNo = segment.flightNo) {
+async function queryOfficial(segment, memberGrade, index) {
   const payload = {
     org: segment.origin,
     des: segment.destination,
     flightDate: segment.flightDate,
-    flightNo,
+    flightNo: segment.flightNo,
     memberGrade,
   };
   const body = new URLSearchParams({ data: JSON.stringify(payload) });
@@ -53,11 +52,6 @@ async function fetchOfficialTiers(segment, memberGrade, index, flightNo = segmen
     gradingMileage: Number(item.gradingMileage) || 0,
     gradingSegments: Number(item.gradingSeq) || 0,
   }));
-  return tiers;
-}
-
-async function queryOfficial(segment, memberGrade, index) {
-  const tiers = await fetchOfficialTiers(segment, memberGrade, index);
   const row = tiers.find(item => item.subClassName.split('/').includes(segment.cabin));
   if (!row) {
     const error = new Error(`第 ${index + 1} 段：国航未返回 ${segment.cabin} 舱累计规则`);
@@ -76,39 +70,6 @@ async function queryOfficial(segment, memberGrade, index) {
   };
 }
 
-async function queryA3(segment, index) {
-  const actualAirline = segment.flightNo.slice(0, 2);
-  if (actualAirline !== 'CA') {
-    const error = new Error(`第 ${index + 1} 段：A3 当前先支持累计国航 CA`);
-    error.statusCode = 422;
-    throw error;
-  }
-  const rule = A3_CA.rules.find(item => item.subClassName.split('/').includes(segment.cabin));
-  if (!rule) {
-    const error = new Error(`第 ${index + 1} 段：A3 不累计 ${segment.cabin} 舱`);
-    error.statusCode = 422;
-    throw error;
-  }
-  const tiers = await fetchOfficialTiers(segment, 'Normal', index, 'CA0');
-  const reference = tiers.find(item => item.subClassName.split('/').includes('F') && item.subClassName.split('/').includes('J')) || tiers[0];
-  // ponytail: derive route distance from CA0's official baseline; use airport coordinates if that endpoint changes.
-  const distance = Math.round(Number(reference?.availableMileage || 0) / Number(reference?.gradingSegments || 0));
-  if (!distance) throw new Error(`第 ${index + 1} 段：无法取得国航航段距离`);
-  const availableMileage = Math.max(Math.round(distance * rule.factor), rule.minimumMiles);
-  return {
-    ...segment,
-    targetProgram: 'A3',
-    cabinGroup: rule.subClassName,
-    rate: rule.rate,
-    availableMileage,
-    gradingMileage: 0,
-    gradingSegments: 0,
-    distanceMiles: distance,
-    tiers: A3_CA.rules.map(item => ({ ...item, availableMileage: 0, gradingMileage: 0, gradingSegments: 0 })),
-    genericRule: false,
-  };
-}
-
 module.exports = async function handler(request, response) {
   response.setHeader('Access-Control-Allow-Origin', '*');
   response.setHeader('Access-Control-Allow-Headers', 'content-type');
@@ -117,10 +78,8 @@ module.exports = async function handler(request, response) {
   if (request.method !== 'POST') return response.status(405).json({ success: false, message: '仅支持 POST 请求' });
   try {
     const input = typeof request.body === 'string' ? JSON.parse(request.body) : request.body || {};
-    const targetProgram = String(input.targetProgram || 'CA').toUpperCase();
     const memberGrade = String(input.memberGrade || 'Normal');
     const segments = Array.isArray(input.segments) ? input.segments.map(cleanSegment) : [];
-    if (!['CA', 'A3'].includes(targetProgram)) return response.status(400).json({ success: false, message: '暂不支持该常旅客计划' });
     if (!GRADES.has(memberGrade)) return response.status(400).json({ success: false, message: '会员卡等无效' });
     if (!segments.length || segments.length > 20) return response.status(400).json({ success: false, message: '请输入 1–20 个航段' });
     for (let index = 0; index < segments.length; index += 1) {
@@ -128,13 +87,13 @@ module.exports = async function handler(request, response) {
       if (message) return response.status(400).json({ success: false, message });
     }
     const calculated = [];
-    for (let index = 0; index < segments.length; index += 1) calculated.push(targetProgram === 'A3' ? await queryA3(segments[index], index) : await queryOfficial(segments[index], memberGrade, index));
+    for (let index = 0; index < segments.length; index += 1) calculated.push(await queryOfficial(segments[index], memberGrade, index));
     const totals = calculated.reduce((sum, item) => ({
       availableMileage: sum.availableMileage + item.availableMileage,
       gradingMileage: sum.gradingMileage + item.gradingMileage,
       gradingSegments: sum.gradingSegments + item.gradingSegments,
     }), { availableMileage: 0, gradingMileage: 0, gradingSegments: 0 });
-    return response.status(200).json({ success: true, source: targetProgram === 'A3' ? 'Aegean Miles+Bonus' : 'Air China PhoenixMiles', targetProgram, memberGrade, segments: calculated, totals });
+    return response.status(200).json({ success: true, source: 'Air China PhoenixMiles', memberGrade, segments: calculated, totals });
   } catch (error) {
     const message = error?.name === 'TimeoutError' ? '国航官方接口查询超时，请稍后重试' : error.message || '国航官方接口暂时不可用';
     return response.status(error?.statusCode || 502).json({ success: false, message });

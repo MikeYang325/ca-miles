@@ -16,8 +16,6 @@ ROOT = Path(__file__).resolve().parent
 OFFICIAL_URL = "https://ffp.airchina.com.cn/apigateway/user/jsonp/mileageCumulateCalculation"
 OFFICIAL_AIRPORTS_URL = "https://ffp.airchina.com.cn/resources/airport_code_me_me_mc_2_v3.js"
 GRADES = {"Normal", "Junior", "Silver", "Gold", "Platinum", "LifetimePlatinum"}
-PROGRAM_RULES = json.loads((ROOT / "program-rules.json").read_text())
-A3_CA = PROGRAM_RULES["programs"]["A3"]["partners"]["CA"]
 SUPPLEMENTAL_AIRPORTS = [
     {"name": "萨格勒布机场", "pinyin": "Zagreb", "code": "ZAG", "initials": "sglb", "city": "萨格勒布"},
 ]
@@ -65,7 +63,7 @@ def validate_segment(segment: dict, index: int) -> str:
     prefix = f"第 {index + 1} 段"
     if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", segment["flightDate"]):
         return f"{prefix}日期无效"
-    if not re.fullmatch(r"[A-Z0-9]{2}\d{1,4}[A-Z]?", segment["flightNo"]):
+    if not re.fullmatch(r"[A-Z]{2}\d{1,4}[A-Z]?", segment["flightNo"]):
         return f"{prefix}航班号无效"
     if not re.fullmatch(r"[A-Z]{3}", segment["origin"]) or not re.fullmatch(r"[A-Z]{3}", segment["destination"]):
         return f"{prefix}机场三字码无效"
@@ -134,30 +132,6 @@ def query_official(args: tuple[dict, str, int]) -> dict:
     }
 
 
-def query_a3(segment: dict, index: int) -> dict:
-    if segment["flightNo"][:2] != "CA":
-        raise ValueError(f"第 {index + 1} 段：A3 当前先支持累计国航 CA")
-    rule = next((item for item in A3_CA["rules"] if segment["cabin"] in item["subClassName"].split("/")), None)
-    if not rule:
-        raise ValueError(f"第 {index + 1} 段：A3 不累计 {segment['cabin']} 舱")
-    tiers = request_official({
-        "org": segment["origin"], "des": segment["destination"],
-        "flightDate": segment["flightDate"], "flightNo": "CA0", "memberGrade": "Normal",
-    })
-    reference = next((item for item in tiers if {"F", "J"}.issubset(set(item["subClassName"].split("/")))), tiers[0] if tiers else None)
-    # ponytail: derive route distance from CA0's official baseline; use airport coordinates if that endpoint changes.
-    distance = round(reference["availableMileage"] / reference["gradingSegments"]) if reference and reference["gradingSegments"] else 0
-    if not distance:
-        raise ValueError(f"第 {index + 1} 段：无法取得国航航段距离")
-    return {
-        **segment, "targetProgram": "A3", "cabinGroup": rule["subClassName"], "rate": rule["rate"],
-        "availableMileage": max(int(distance * rule["factor"] + 0.5), rule["minimumMiles"]),
-        "gradingMileage": 0, "gradingSegments": 0, "distanceMiles": distance,
-        "tiers": [{**item, "availableMileage": 0, "gradingMileage": 0, "gradingSegments": 0} for item in A3_CA["rules"]],
-        "genericRule": False,
-    }
-
-
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(ROOT), **kwargs)
@@ -197,11 +171,7 @@ class Handler(SimpleHTTPRequestHandler):
         try:
             length = int(self.headers.get("Content-Length", "0"))
             request_data = json.loads(self.rfile.read(length) or b"{}")
-            target_program = str(request_data.get("targetProgram", "CA")).upper()
             member_grade = str(request_data.get("memberGrade", "Normal"))
-            if target_program not in {"CA", "A3"}:
-                self.send_json(400, {"success": False, "message": "暂不支持该常旅客计划"})
-                return
             if self.path == "/api/airchina/tiers":
                 segment = clean_segment(request_data)
                 if member_grade not in GRADES:
@@ -210,12 +180,6 @@ class Handler(SimpleHTTPRequestHandler):
                 message = validate_segment({**segment, "cabin": segment["cabin"] or "A"}, 0)
                 if message:
                     self.send_json(400, {"success": False, "message": message})
-                    return
-                if target_program == "A3":
-                    if segment["flightNo"][:2] != "CA":
-                        self.send_json(422, {"success": False, "message": "A3 当前先支持累计国航 CA"})
-                        return
-                    self.send_json(200, {"success": True, "source": "Aegean Miles+Bonus", "targetProgram": target_program, "tiers": [{**item, "availableMileage": 0, "gradingMileage": 0, "gradingSegments": 0} for item in A3_CA["rules"]]})
                     return
                 tiers = request_official({"org": segment["origin"], "des": segment["destination"], "flightDate": segment["flightDate"], "flightNo": segment["flightNo"], "memberGrade": member_grade})
                 self.send_json(200, {"success": True, "source": "Air China PhoenixMiles", "tiers": tiers})
@@ -232,13 +196,13 @@ class Handler(SimpleHTTPRequestHandler):
                 if message:
                     self.send_json(400, {"success": False, "message": message})
                     return
-            calculated = [query_a3(segment, index) if target_program == "A3" else query_official((segment, member_grade, index)) for index, segment in enumerate(segments)]
+            calculated = [query_official((segment, member_grade, index)) for index, segment in enumerate(segments)]
             totals = {
                 "availableMileage": sum(item["availableMileage"] for item in calculated),
                 "gradingMileage": sum(item["gradingMileage"] for item in calculated),
                 "gradingSegments": sum(item["gradingSegments"] for item in calculated),
             }
-            self.send_json(200, {"success": True, "source": "Aegean Miles+Bonus" if target_program == "A3" else "Air China PhoenixMiles", "targetProgram": target_program, "memberGrade": member_grade, "segments": calculated, "totals": totals})
+            self.send_json(200, {"success": True, "source": "Air China PhoenixMiles", "memberGrade": member_grade, "segments": calculated, "totals": totals})
         except ValueError as error:
             self.send_json(422, {"success": False, "message": str(error)})
         except urllib.error.HTTPError as error:
