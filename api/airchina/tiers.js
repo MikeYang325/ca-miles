@@ -22,7 +22,7 @@ module.exports = async function handler(request, response) {
     if (!GRADES.has(payload.memberGrade)) return response.status(400).json({ success: false, message: '会员卡等无效' });
     const upstream = await fetch(OFFICIAL_URL, {
       method: 'POST',
-      headers: { Accept: '*/*', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', Origin: 'https://ffp.airchina.com.cn', Referer: 'https://ffp.airchina.com.cn/plan/mileage_accumulate_calculator.html', 'X-Requested-With': 'XMLHttpRequest' },
+      headers: { Accept: '*/*', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', Origin: 'https://ffp.airchina.com.cn', Referer: 'https://ffp.airchina.com.cn/plan/mileage_accumulate_calculator.html', 'X-Requested-With': 'XMLHttpRequest', 'User-Agent': 'Mozilla/5.0 AppleWebKit/537.36 Chrome/151 Safari/537.36' },
       body: new URLSearchParams({ data: JSON.stringify(payload) }),
       signal: AbortSignal.timeout(15000),
     });

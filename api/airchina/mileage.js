@@ -38,6 +38,7 @@ async function queryOfficial(segment, memberGrade, index) {
       Origin: 'https://ffp.airchina.com.cn',
       Referer: 'https://ffp.airchina.com.cn/plan/mileage_accumulate_calculator.html',
       'X-Requested-With': 'XMLHttpRequest',
+      'User-Agent': 'Mozilla/5.0 AppleWebKit/537.36 Chrome/151 Safari/537.36',
     },
     body,
     signal: AbortSignal.timeout(15000),
