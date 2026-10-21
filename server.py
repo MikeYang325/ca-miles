@@ -63,7 +63,7 @@ def validate_segment(segment: dict, index: int) -> str:
     prefix = f"第 {index + 1} 段"
     if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", segment["flightDate"]):
         return f"{prefix}日期无效"
-    if not re.fullmatch(r"[A-Z]{2}\d{1,4}[A-Z]?", segment["flightNo"]):
+    if not re.fullmatch(r"(?:[A-Z]{2}|[A-Z]\d|[0-9][A-Z])\d{1,4}[A-Z]?", segment["flightNo"]):
         return f"{prefix}航班号无效"
     if not re.fullmatch(r"[A-Z]{3}", segment["origin"]) or not re.fullmatch(r"[A-Z]{3}", segment["destination"]):
         return f"{prefix}机场三字码无效"
@@ -128,7 +128,7 @@ def query_official(args: tuple[dict, str, int]) -> dict:
         "gradingMileage": row["gradingMileage"],
         "gradingSegments": row["gradingSegments"],
         "tiers": tiers,
-        "genericRule": bool(re.fullmatch(r"[A-Z]{2}0", segment["flightNo"])),
+        "genericRule": bool(re.fullmatch(r"(?:[A-Z]{2}|[A-Z]\d|[0-9][A-Z])0", segment["flightNo"])),
     }
 
 

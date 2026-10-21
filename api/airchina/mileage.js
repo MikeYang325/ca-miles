@@ -67,7 +67,7 @@ async function queryOfficial(segment, memberGrade, index) {
     gradingMileage: row.gradingMileage,
     gradingSegments: row.gradingSegments,
     tiers,
-    genericRule: /^[A-Z]{2}0$/.test(segment.flightNo),
+    genericRule: /^(?:[A-Z]{2}|[A-Z]\d|[0-9][A-Z])0$/.test(segment.flightNo),
   };
 }
 
