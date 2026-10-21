@@ -1,7 +1,7 @@
 {
   "source": "Air China PhoenixMiles",
   "referenceRoute": "PEK-SHA",
-  "referenceDate": "2026-09-28",
+  "referenceDate": "2026-10-21",
   "airlines": {
     "NZ": [
       {
@@ -536,28 +536,7 @@
       }
     ],
     "A3": [],
-    "OZ": [
-      {
-        "subClassName": "C",
-        "rate": "125%"
-      },
-      {
-        "subClassName": "H/U/A/B/E/M/Y",
-        "rate": "100%"
-      },
-      {
-        "subClassName": "S/Q/K",
-        "rate": "75%"
-      },
-      {
-        "subClassName": "V",
-        "rate": "50%"
-      },
-      {
-        "subClassName": "N/W/D/G/T/J/L/R/Z",
-        "rate": "0%"
-      }
-    ],
+    "OZ": [],
     "CM": [
       {
         "subClassName": "R/C/D/J",
